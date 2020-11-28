@@ -45,15 +45,13 @@ ui <- fluidPage(
         radioButtons("disp", "Display",
                      choices = c(Head = "head",
                                  All = "all"),
-                     selected = "head"),
-        width = 4
+                     selected = "head")
         ),
 
         # Show a plot of the generated distribution
         mainPanel(
             # Output: Data file ----
-            tableOutput("contents"),
-            width = 12
+            tableOutput("contents")
         )
     )
 )
