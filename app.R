@@ -8,6 +8,7 @@
 #
 
 library(shiny)
+library(DT)
 
 # Define UI for application that draws a histogram
 ui <- navbarPage("Shiny Copy Numbers!",
@@ -41,38 +42,39 @@ ui <- navbarPage("Shiny Copy Numbers!",
                                  "Double Quote" = '"',
                                  "Single Quote" = "'"),
                      selected = '"'),
-             tags$hr(),
-         
-             radioButtons("disp", "Display",
-                          choices = c(Head = "head",
-                                      All = "all"),
-                          selected = "head")
+             tags$hr()
+             
              ),
     tabPanel("Merge Tables",
-             
-    ),
+             ),
     
-    mainPanel(
-        tableOutput("contents")
-    )
+    mainPanel(type="tabs",
+              tabsetPanel("Upload Data", DT::dataTableOutput("rawTable1"), DT::dataTableOutput("rawTable2")),
+              tabPanel("Merge Tables", tableOutput("mergedTable"))
+              )
 )
 
 # Define server logic required to draw a histogram
 server <- function(input, output) {
 
-    output$contents = renderTable({
+    output$rawTable1 = DT::renderDataTable({
         req(input$file1)
         
         df = read.csv(input$file1$datapath,
                       header = input$header,
                       sep = input$sep,
                       quote = input$quote)
+        DT::datatable(df, width = 800)
+    })
+    
+    output$rawTable2 = DT::renderDataTable({
+        req(input$file2)
         
-        if(input$disp == "head") {
-            return(head(df))
-        } else {
-            return(df)
-        }
+        df = read.csv(input$file2$datapath,
+                      header = input$header,
+                      sep = input$sep,
+                      quote = input$quote)
+        DT::datatable(df, width = 800)
     })
 }
 
