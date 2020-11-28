@@ -18,6 +18,38 @@ options(shiny.maxRequestSize = 30*1024^2)
 ui <- navbarPage("Shiny Copy Numbers!",
 
     # Sidebar with a slider input for number of bins 
+    tabPanel("Upload readCounter Output",
+             sidebarPanel(
+                 fileInput("samplewig", "Choose readCounter wig",
+                           multiple = TRUE,
+                           accept = c("wig",
+                                      "readCounter wig from bam",
+                                      c(".wig"))),
+                 
+                 tags$hr(),
+                 
+                 radioButtons("window", "Window",
+                              choices = c("10,000 bp" = "10000",
+                                          "100,000 bp" = "100000",
+                                          "1,000,000 bp" = "1000000"),
+                              selected = "1000000"),
+                 tags$hr(),
+                 
+                 selectInput("genome", "Genome Alignment",
+                              choices = c(None = NULL,
+                                          "hg19" = "hg19",
+                                          "GRCh37" = "GRCh37",
+                                          "b37 (decoy)" = "b37"),
+                              selected = NULL),
+                 tags$hr(),
+                 width = 3
+             ),
+             
+             mainPanel(type="tabs",
+                       tabPanel("Upload readCounter Output", DT::dataTableOutput("inputwig"))
+             )
+    ),
+    
     tabPanel("Upload Data",
              sidebarPanel(
                  fileInput("file1", "Choose CSV File 1",
@@ -30,18 +62,18 @@ ui <- navbarPage("Shiny Copy Numbers!",
                            accept = c("text/csv/tsv",
                                       "text/comma-separated-values/tab-separated",
                                       c(".csv",".tsv"))),
-        
+                 
                  tags$hr(),
-         
+                 
                  checkboxInput("header", "Header", TRUE),
-        
-                  radioButtons("sep", "Separator",
-                               choices = c(Comma = ",",
-                                           Semicolon = ";",
-                                           Tab = "\t"),
-                               selected = ","),
+                 
+                 radioButtons("sep", "Separator",
+                              choices = c(Comma = ",",
+                                          Semicolon = ";",
+                                          Tab = "\t"),
+                              selected = ","),
                  tags$hr(),
-        
+                 
                  radioButtons("quote", "Quote",
                               choices = c(None = "",
                                           "Double Quote" = '"',
@@ -49,12 +81,12 @@ ui <- navbarPage("Shiny Copy Numbers!",
                               selected = '"'),
                  tags$hr(),
                  width = 3
-                 ),
+             ),
              
              mainPanel(type="tabs",
                        tabPanel("Upload Data", DT::dataTableOutput("rawTable1"), DT::dataTableOutput("rawTable2"))
-                       )
-             ),
+             )
+    ),
     
     tabPanel("Merge Tables",
              sidebarPanel(
