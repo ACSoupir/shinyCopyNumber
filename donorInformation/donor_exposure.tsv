@@ -1,0 +1,183 @@
+icgc_donor_id	project_code	submitted_donor_id	exposure_type	exposure_intensity	tobacco_smoking_history_indicator	tobacco_smoking_intensity	alcohol_history	alcohol_history_intensity
+DO51964	PRAD-UK	A21-0096_CRUK_PC_0096			Current reformed smoker for > 15 years	86	yes	Daily Drinker
+DO51965	PRAD-UK	A17-0095_CRUK_PC_0095			Lifelong non-smoker (<100 cigarettes smoked in lifetime)	0	yes	Social Drinker (> once a month, < once a week)
+DO51960	PRAD-UK	A24-0021_CRUK_PC_0021			Lifelong non-smoker (<100 cigarettes smoked in lifetime)	0	yes	Weekly Drinker (>=1x a week)
+DO51962	PRAD-UK	A34-0022_CRUK_PC_0022			Current reformed smoker for > 15 years	60	yes	Social Drinker (> once a month, < once a week)
+DO51954	PRAD-UK	A22-0016_CRUK_PC_0016			Current reformed smoker for > 15 years	60	yes	Social Drinker (> once a month, < once a week)
+DO51955	PRAD-UK	A29-0017_CRUK_PC_0017			Current reformed smoker for > 15 years	25	yes	Occassional Drinker (< once a month)
+DO51956	PRAD-UK	A31-0018_CRUK_PC_0018			Lifelong non-smoker (<100 cigarettes smoked in lifetime)	0	yes	Daily Drinker
+DO51958	PRAD-UK	A32-0019_CRUK_PC_0019			Lifelong non-smoker (<100 cigarettes smoked in lifetime)	0	yes	Weekly Drinker (>=1x a week)
+DO51959	PRAD-UK	A12-0020_CRUK_PC_0020			Current reformed smoker for > 15 years	29	yes	Weekly Drinker (>=1x a week)
+DO36223	PRAD-UK	0008_CRUK_PC_0008			Smoking history not documented		Don't know/Not sure	Not Documented
+DO36221	PRAD-UK	0007_CRUK_PC_0007			Smoking history not documented		Don't know/Not sure	Not Documented
+DO48577	PRAD-UK	0006_CRUK_PC_0006			Smoking history not documented		Don't know/Not sure	Not Documented
+DO50430	PRAD-UK	0082_CRUK_PC_0082			Smoking history not documented		Don't know/Not sure	Not Documented
+DO50431	PRAD-UK	0091_CRUK_PC_0091			Smoking history not documented		Don't know/Not sure	Not Documented
+DO50432	PRAD-UK	0090_CRUK_PC_0090			Smoking history not documented		Don't know/Not sure	Not Documented
+DO50424	PRAD-UK	0070_CRUK_PC_0070			Smoking history not documented		Don't know/Not sure	Not Documented
+DO50425	PRAD-UK	0093_CRUK_PC_0093			Smoking history not documented		Don't know/Not sure	Not Documented
+DO50426	PRAD-UK	0094_CRUK_PC_0094			Smoking history not documented		Don't know/Not sure	Not Documented
+DO50427	PRAD-UK	0084_CRUK_PC_0084			Smoking history not documented		Don't know/Not sure	Not Documented
+DO50428	PRAD-UK	0089_CRUK_PC_0089			Smoking history not documented		Don't know/Not sure	Not Documented
+DO50420	PRAD-UK	0071_CRUK_PC_0071			Smoking history not documented		Don't know/Not sure	Not Documented
+DO50421	PRAD-UK	0067_CRUK_PC_0067			Smoking history not documented		Don't know/Not sure	Not Documented
+DO50422	PRAD-UK	0065_CRUK_PC_0065			Smoking history not documented		Don't know/Not sure	Not Documented
+DO50423	PRAD-UK	0069_CRUK_PC_0069			Smoking history not documented		Don't know/Not sure	Not Documented
+DO50414	PRAD-UK	0080_CRUK_PC_0080			Smoking history not documented		Don't know/Not sure	Not Documented
+DO50415	PRAD-UK	0072_CRUK_PC_0072			Smoking history not documented		Don't know/Not sure	Not Documented
+DO50416	PRAD-UK	0064_CRUK_PC_0064			Smoking history not documented		Don't know/Not sure	Not Documented
+DO50417	PRAD-UK	0075_CRUK_PC_0075			Smoking history not documented		Don't know/Not sure	Not Documented
+DO50418	PRAD-UK	0077_CRUK_PC_0077			Smoking history not documented		Don't know/Not sure	Not Documented
+DO50419	PRAD-UK	0078_CRUK_PC_0078			Smoking history not documented		Don't know/Not sure	Not Documented
+DO46793	PRAD-CA	CPCG0102			Smoking history not documented		Don't know/Not sure	Not Documented
+DO46796	PRAD-CA	CPCG0184			Smoking history not documented		Don't know/Not sure	Not Documented
+DO46790	PRAD-CA	CPCG0020			Smoking history not documented		Don't know/Not sure	Not Documented
+DO46792	PRAD-CA	CPCG0099			Smoking history not documented		Don't know/Not sure	Not Documented
+DO46787	PRAD-CA	CPCG0001			Smoking history not documented		Don't know/Not sure	Not Documented
+DO46788	PRAD-CA	CPCG0003			Smoking history not documented		Don't know/Not sure	Not Documented
+DO10819	EOPC-DE	EOPC-08			Smoking history not documented		Don't know/Not sure	Not Documented
+DO10817	EOPC-DE	EOPC-07			Smoking history not documented		Don't know/Not sure	Not Documented
+DO10815	EOPC-DE	EOPC-06			Smoking history not documented		Don't know/Not sure	Not Documented
+DO10813	EOPC-DE	EOPC-05			Smoking history not documented		Don't know/Not sure	Not Documented
+DO10811	EOPC-DE	EOPC-04			Smoking history not documented		Don't know/Not sure	Not Documented
+DO10809	EOPC-DE	EOPC-03			Smoking history not documented		Don't know/Not sure	Not Documented
+DO10807	EOPC-DE	EOPC-02			Smoking history not documented		Don't know/Not sure	Not Documented
+DO10806	EOPC-DE	EOPC-01			Smoking history not documented		Don't know/Not sure	Not Documented
+DO10837	EOPC-DE	EOPC-026			Smoking history not documented		Don't know/Not sure	Not Documented
+DO10835	EOPC-DE	EOPC-024			Smoking history not documented		Don't know/Not sure	Not Documented
+DO10833	EOPC-DE	EOPC-022			Smoking history not documented		Don't know/Not sure	Not Documented
+DO10831	EOPC-DE	EOPC-021			Smoking history not documented		Don't know/Not sure	Not Documented
+DO10829	EOPC-DE	EOPC-018			Smoking history not documented		Don't know/Not sure	Not Documented
+DO10825	EOPC-DE	EOPC-011			Smoking history not documented		Don't know/Not sure	Not Documented
+DO10823	EOPC-DE	EOPC-010			Smoking history not documented		Don't know/Not sure	Not Documented
+DO10821	EOPC-DE	EOPC-09			Smoking history not documented		Don't know/Not sure	Not Documented
+DO51046	PRAD-CA	CPCG0047			Smoking history not documented		Don't know/Not sure	Not Documented
+DO51047	PRAD-CA	CPCG0048			Smoking history not documented		Don't know/Not sure	Not Documented
+DO51048	PRAD-CA	CPCG0057			Smoking history not documented		Don't know/Not sure	Not Documented
+DO51049	PRAD-CA	CPCG0063			Smoking history not documented		Don't know/Not sure	Not Documented
+DO51098	PRAD-CA	CPCG0256			Smoking history not documented		Don't know/Not sure	Not Documented
+DO51099	PRAD-CA	CPCG0258			Smoking history not documented		Don't know/Not sure	Not Documented
+DO51090	PRAD-CA	CPCG0241			Smoking history not documented		Don't know/Not sure	Not Documented
+DO51091	PRAD-CA	CPCG0242			Smoking history not documented		Don't know/Not sure	Not Documented
+DO51092	PRAD-CA	CPCG0246			Smoking history not documented		Don't know/Not sure	Not Documented
+DO51093	PRAD-CA	CPCG0248			Smoking history not documented		Don't know/Not sure	Not Documented
+DO51094	PRAD-CA	CPCG0249			Smoking history not documented		Don't know/Not sure	Not Documented
+DO51095	PRAD-CA	CPCG0250			Smoking history not documented		Don't know/Not sure	Not Documented
+DO51096	PRAD-CA	CPCG0251			Smoking history not documented		Don't know/Not sure	Not Documented
+DO51097	PRAD-CA	CPCG0255			Smoking history not documented		Don't know/Not sure	Not Documented
+DO51087	PRAD-CA	CPCG0234			Smoking history not documented		Don't know/Not sure	Not Documented
+DO51088	PRAD-CA	CPCG0236			Smoking history not documented		Don't know/Not sure	Not Documented
+DO51089	PRAD-CA	CPCG0238			Smoking history not documented		Don't know/Not sure	Not Documented
+DO51080	PRAD-CA	CPCG0210			Smoking history not documented		Don't know/Not sure	Not Documented
+DO51081	PRAD-CA	CPCG0211			Smoking history not documented		Don't know/Not sure	Not Documented
+DO51083	PRAD-CA	CPCG0213			Smoking history not documented		Don't know/Not sure	Not Documented
+DO51084	PRAD-CA	CPCG0217			Smoking history not documented		Don't know/Not sure	Not Documented
+DO51085	PRAD-CA	CPCG0232			Smoking history not documented		Don't know/Not sure	Not Documented
+DO51086	PRAD-CA	CPCG0233			Smoking history not documented		Don't know/Not sure	Not Documented
+DO51078	PRAD-CA	CPCG0206			Smoking history not documented		Don't know/Not sure	Not Documented
+DO51079	PRAD-CA	CPCG0208			Smoking history not documented		Don't know/Not sure	Not Documented
+DO51070	PRAD-CA	CPCG0189			Smoking history not documented		Don't know/Not sure	Not Documented
+DO51071	PRAD-CA	CPCG0190			Smoking history not documented		Don't know/Not sure	Not Documented
+DO51072	PRAD-CA	CPCG0191			Smoking history not documented		Don't know/Not sure	Not Documented
+DO51073	PRAD-CA	CPCG0196			Smoking history not documented		Don't know/Not sure	Not Documented
+DO51074	PRAD-CA	CPCG0199			Smoking history not documented		Don't know/Not sure	Not Documented
+DO51075	PRAD-CA	CPCG0201			Smoking history not documented		Don't know/Not sure	Not Documented
+DO51065	PRAD-CA	CPCG0154			Smoking history not documented		Don't know/Not sure	Not Documented
+DO51066	PRAD-CA	CPCG0158			Smoking history not documented		Don't know/Not sure	Not Documented
+DO51067	PRAD-CA	CPCG0166			Smoking history not documented		Don't know/Not sure	Not Documented
+DO51068	PRAD-CA	CPCG0182			Smoking history not documented		Don't know/Not sure	Not Documented
+DO51069	PRAD-CA	CPCG0185			Smoking history not documented		Don't know/Not sure	Not Documented
+DO51060	PRAD-CA	CPCG0121			Smoking history not documented		Don't know/Not sure	Not Documented
+DO51061	PRAD-CA	CPCG0123			Smoking history not documented		Don't know/Not sure	Not Documented
+DO51062	PRAD-CA	CPCG0124			Smoking history not documented		Don't know/Not sure	Not Documented
+DO51063	PRAD-CA	CPCG0127			Smoking history not documented		Don't know/Not sure	Not Documented
+DO51064	PRAD-CA	CPCG0128			Smoking history not documented		Don't know/Not sure	Not Documented
+DO51054	PRAD-CA	CPCG0087			Smoking history not documented		Don't know/Not sure	Not Documented
+DO51055	PRAD-CA	CPCG0094			Smoking history not documented		Don't know/Not sure	Not Documented
+DO51056	PRAD-CA	CPCG0095			Smoking history not documented		Don't know/Not sure	Not Documented
+DO51057	PRAD-CA	CPCG0098			Smoking history not documented		Don't know/Not sure	Not Documented
+DO51050	PRAD-CA	CPCG0073			Smoking history not documented		Don't know/Not sure	Not Documented
+DO51051	PRAD-CA	CPCG0078			Smoking history not documented		Don't know/Not sure	Not Documented
+DO51052	PRAD-CA	CPCG0081			Smoking history not documented		Don't know/Not sure	Not Documented
+DO51053	PRAD-CA	CPCG0083			Smoking history not documented		Don't know/Not sure	Not Documented
+DO52530	EOPC-DE	EOPC-056			Smoking history not documented		Don't know/Not sure	Not Documented
+DO52532	EOPC-DE	EOPC-057			Smoking history not documented		Don't know/Not sure	Not Documented
+DO52534	EOPC-DE	EOPC-058			Smoking history not documented		Don't know/Not sure	Not Documented
+DO52526	EOPC-DE	EOPC-053			Current smoker (includes daily smokers non-daily/occasional smokers)		yes	Not Documented
+DO52528	EOPC-DE	EOPC-054			Current reformed smoker for <= 15 years		yes	Not Documented
+DO52520	EOPC-DE	EOPC-049			Lifelong non-smoker (<100 cigarettes smoked in lifetime)		Don't know/Not sure	Not Documented
+DO52522	EOPC-DE	EOPC-051			Smoking history not documented		Don't know/Not sure	Not Documented
+DO52524	EOPC-DE	EOPC-052			Current reformed smoker for <= 15 years		yes	Not Documented
+DO52514	EOPC-DE	EOPC-040			Smoking history not documented		Don't know/Not sure	Not Documented
+DO52516	EOPC-DE	EOPC-041			Current smoker (includes daily smokers non-daily/occasional smokers)		yes	Not Documented
+DO52510	EOPC-DE	EOPC-035			Lifelong non-smoker (<100 cigarettes smoked in lifetime)		Don't know/Not sure	Not Documented
+DO52511	EOPC-DE	EOPC-036			Current reformed smoker for <= 15 years		Don't know/Not sure	Not Documented
+DO52512	EOPC-DE	EOPC-037			Lifelong non-smoker (<100 cigarettes smoked in lifetime)		Don't know/Not sure	Not Documented
+DO52513	EOPC-DE	EOPC-038			Lifelong non-smoker (<100 cigarettes smoked in lifetime)		Don't know/Not sure	Not Documented
+DO52503	EOPC-DE	EOPC-028			Smoking history not documented		Don't know/Not sure	Not Documented
+DO52504	EOPC-DE	EOPC-029			Smoking history not documented		Don't know/Not sure	Not Documented
+DO52505	EOPC-DE	EOPC-030			Smoking history not documented		Don't know/Not sure	Not Documented
+DO52506	EOPC-DE	EOPC-031			Smoking history not documented		Don't know/Not sure	Not Documented
+DO52508	EOPC-DE	EOPC-033			Smoking history not documented		Don't know/Not sure	Not Documented
+DO52509	EOPC-DE	EOPC-034			Current reformed smoker for > 15 years		Don't know/Not sure	Not Documented
+DO52500	EOPC-DE	EOPC-023			Smoking history not documented		Don't know/Not sure	Not Documented
+DO52501	EOPC-DE	EOPC-025			Smoking history not documented		Don't know/Not sure	Not Documented
+DO52502	EOPC-DE	EOPC-027			Smoking history not documented		Don't know/Not sure	Not Documented
+DO52498	EOPC-DE	EOPC-017			Smoking history not documented		Don't know/Not sure	Not Documented
+DO52499	EOPC-DE	EOPC-019			Smoking history not documented		Don't know/Not sure	Not Documented
+DO51153	PRAD-CA	CPCG0407			Smoking history not documented		Don't know/Not sure	Not Documented
+DO51154	PRAD-CA	CPCG0409			Smoking history not documented		Don't know/Not sure	Not Documented
+DO51155	PRAD-CA	CPCG0410			Smoking history not documented		Don't know/Not sure	Not Documented
+DO51156	PRAD-CA	CPCG0411			Smoking history not documented		Don't know/Not sure	Not Documented
+DO51157	PRAD-CA	CPCG0412			Smoking history not documented		Don't know/Not sure	Not Documented
+DO51158	PRAD-CA	CPCG0413			Smoking history not documented		Don't know/Not sure	Not Documented
+DO51159	PRAD-CA	CPCG0414			Smoking history not documented		Don't know/Not sure	Not Documented
+DO51150	PRAD-CA	CPCG0392			Smoking history not documented		Don't know/Not sure	Not Documented
+DO51152	PRAD-CA	CPCG0404			Smoking history not documented		Don't know/Not sure	Not Documented
+DO51143	PRAD-CA	CPCG0378			Smoking history not documented		Don't know/Not sure	Not Documented
+DO51144	PRAD-CA	CPCG0379			Smoking history not documented		Don't know/Not sure	Not Documented
+DO51145	PRAD-CA	CPCG0380			Smoking history not documented		Don't know/Not sure	Not Documented
+DO51147	PRAD-CA	CPCG0387			Smoking history not documented		Don't know/Not sure	Not Documented
+DO51148	PRAD-CA	CPCG0388			Smoking history not documented		Don't know/Not sure	Not Documented
+DO51149	PRAD-CA	CPCG0391			Smoking history not documented		Don't know/Not sure	Not Documented
+DO51140	PRAD-CA	CPCG0373			Smoking history not documented		Don't know/Not sure	Not Documented
+DO51141	PRAD-CA	CPCG0374			Smoking history not documented		Don't know/Not sure	Not Documented
+DO51139	PRAD-CA	CPCG0372			Smoking history not documented		Don't know/Not sure	Not Documented
+DO51131	PRAD-CA	CPCG0362			Smoking history not documented		Don't know/Not sure	Not Documented
+DO51132	PRAD-CA	CPCG0363			Smoking history not documented		Don't know/Not sure	Not Documented
+DO51133	PRAD-CA	CPCG0364			Smoking history not documented		Don't know/Not sure	Not Documented
+DO51134	PRAD-CA	CPCG0365			Smoking history not documented		Don't know/Not sure	Not Documented
+DO51136	PRAD-CA	CPCG0368			Smoking history not documented		Don't know/Not sure	Not Documented
+DO51137	PRAD-CA	CPCG0369			Smoking history not documented		Don't know/Not sure	Not Documented
+DO51138	PRAD-CA	CPCG0371			Smoking history not documented		Don't know/Not sure	Not Documented
+DO51130	PRAD-CA	CPCG0361			Smoking history not documented		Don't know/Not sure	Not Documented
+DO51128	PRAD-CA	CPCG0358			Smoking history not documented		Don't know/Not sure	Not Documented
+DO51129	PRAD-CA	CPCG0360			Smoking history not documented		Don't know/Not sure	Not Documented
+DO51120	PRAD-CA	CPCG0348			Smoking history not documented		Don't know/Not sure	Not Documented
+DO51121	PRAD-CA	CPCG0350			Smoking history not documented		Don't know/Not sure	Not Documented
+DO51122	PRAD-CA	CPCG0352			Smoking history not documented		Don't know/Not sure	Not Documented
+DO51123	PRAD-CA	CPCG0353			Smoking history not documented		Don't know/Not sure	Not Documented
+DO51124	PRAD-CA	CPCG0354			Smoking history not documented		Don't know/Not sure	Not Documented
+DO51125	PRAD-CA	CPCG0355			Smoking history not documented		Don't know/Not sure	Not Documented
+DO51126	PRAD-CA	CPCG0356			Smoking history not documented		Don't know/Not sure	Not Documented
+DO51127	PRAD-CA	CPCG0357			Smoking history not documented		Don't know/Not sure	Not Documented
+DO51117	PRAD-CA	CPCG0344			Smoking history not documented		Don't know/Not sure	Not Documented
+DO51118	PRAD-CA	CPCG0345			Smoking history not documented		Don't know/Not sure	Not Documented
+DO51119	PRAD-CA	CPCG0346			Smoking history not documented		Don't know/Not sure	Not Documented
+DO51110	PRAD-CA	CPCG0331			Smoking history not documented		Don't know/Not sure	Not Documented
+DO51111	PRAD-CA	CPCG0334			Smoking history not documented		Don't know/Not sure	Not Documented
+DO51112	PRAD-CA	CPCG0336			Smoking history not documented		Don't know/Not sure	Not Documented
+DO51113	PRAD-CA	CPCG0339			Smoking history not documented		Don't know/Not sure	Not Documented
+DO221503	PRAD-UK	0056_CRUK_PC_0056			Smoking history not documented		Don't know/Not sure	Not Documented
+DO51114	PRAD-CA	CPCG0340			Smoking history not documented		Don't know/Not sure	Not Documented
+DO221504	PRAD-UK	0086_CRUK_PC_0086			Smoking history not documented		Don't know/Not sure	Not Documented
+DO51115	PRAD-CA	CPCG0341			Smoking history not documented		Don't know/Not sure	Not Documented
+DO51116	PRAD-CA	CPCG0342			Smoking history not documented		Don't know/Not sure	Not Documented
+DO51106	PRAD-CA	CPCG0267			Smoking history not documented		Don't know/Not sure	Not Documented
+DO51107	PRAD-CA	CPCG0268			Smoking history not documented		Don't know/Not sure	Not Documented
+DO51108	PRAD-CA	CPCG0269			Smoking history not documented		Don't know/Not sure	Not Documented
+DO51109	PRAD-CA	CPCG0324			Smoking history not documented		Don't know/Not sure	Not Documented
+DO51100	PRAD-CA	CPCG0259			Smoking history not documented		Don't know/Not sure	Not Documented
+DO51102	PRAD-CA	CPCG0262			Smoking history not documented		Don't know/Not sure	Not Documented
+DO51103	PRAD-CA	CPCG0263			Smoking history not documented		Don't know/Not sure	Not Documented
+DO51105	PRAD-CA	CPCG0266			Smoking history not documented		Don't know/Not sure	Not Documented

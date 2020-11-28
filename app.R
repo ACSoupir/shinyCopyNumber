@@ -9,6 +9,10 @@
 
 library(shiny)
 library(DT)
+library(stringr)
+rm(list=ls())
+#max file upload size set to 30MB
+options(shiny.maxRequestSize = 30*1024^2)
 
 # Define UI for application that draws a histogram
 ui <- navbarPage("Shiny Copy Numbers!",
@@ -38,20 +42,25 @@ ui <- navbarPage("Shiny Copy Numbers!",
                                selected = ","),
                  tags$hr(),
         
-             radioButtons("quote", "Quote",
-                     choices = c(None = "",
-                                 "Double Quote" = '"',
-                                 "Single Quote" = "'"),
-                     selected = '"'),
-             tags$hr(),
-             width = 3
-        ),
-        mainPanel(type="tabs",
-                  tabPanel("Upload Data", DT::dataTableOutput("rawTable1"), DT::dataTableOutput("rawTable2"))
-                  )
-        ),
+                 radioButtons("quote", "Quote",
+                              choices = c(None = "",
+                                          "Double Quote" = '"',
+                                          "Single Quote" = "'"),
+                              selected = '"'),
+                 tags$hr(),
+                 width = 3
+                 ),
+             
+             mainPanel(type="tabs",
+                       tabPanel("Upload Data", DT::dataTableOutput("rawTable1"), DT::dataTableOutput("rawTable2"))
+                       )
+             ),
     
     tabPanel("Merge Tables",
+             sidebarPanel(
+                 downloadButton("downloadData", "Download")
+             ),
+             
              mainPanel(type="tabs",
                        tabPanel("Merge Tables",  DT::dataTableOutput("mergedTable"))
                        )
@@ -63,11 +72,14 @@ server <- function(input, output) {
 
     output$rawTable1 = DT::renderDataTable({
         req(input$file1)
+        message(input$file1$datapath)
         
         df_file1 = read.csv(input$file1$datapath,
                       header = input$header,
                       sep = input$sep,
                       quote = input$quote)
+        df_file1 = Filter(function(x)!all(is.na(x)),df_file1)
+        assign('file1', df_file1, envir=.GlobalEnv)
         DT::datatable(df_file1, width = 800)
     })
     
@@ -78,6 +90,8 @@ server <- function(input, output) {
                       header = input$header,
                       sep = input$sep,
                       quote = input$quote)
+        df_file2 = Filter(function(x)!all(is.na(x)),df_file2)
+        assign('file2', df_file2, envir=.GlobalEnv)
         DT::datatable(df_file2, width = 800)
     })
     
@@ -85,19 +99,34 @@ server <- function(input, output) {
         req(input$file1)
         req(input$file2)
         
-        df_file1 = read.csv(input$file1$datapath,
-                            header = input$header,
-                            sep = input$sep,
-                            quote = input$quote)
-        
-        df_file2 = read.csv(input$file2$datapath,
-                            header = input$header,
-                            sep = input$sep,
-                            quote = input$quote)
-        
-        df_merged = merge(df_file1, df_file2, by=intersect(names(df_file1), names(df_file2)), all=TRUE)
+        df_merged = merge(file1, file2, by=intersect(colnames(file1)[apply(sample, MARGIN = 2, FUN = function(x) !any(is.na(x)))],
+                                                     colnames(file2)[apply(sample, MARGIN = 2, FUN = function(x) !any(is.na(x)))]), all=TRUE)
+        colnames(df_merged) = gsub('\\.x',
+                                   paste(".",
+                                         substr(input$file1$name,
+                                                start = 1, 
+                                                stop = nchar(input$file1$name)-4),
+                                         sep=""),
+                                   colnames(df_merged))
+        colnames(df_merged) = gsub('\\.y',
+                                   paste(".",
+                                         substr(input$file2$name,
+                                                start = 1, 
+                                                stop = nchar(input$file2$name)-4),
+                                         sep=""),
+                                   colnames(df_merged))
+        assign('df_merged', df_merged, envir=.GlobalEnv)
         DT::datatable(df_merged, width=100)
     })
+    
+    output$downloadData = downloadHandler(
+        filename = function(){
+            paste("merged-",Sys.Date(),".csv",sep="")
+        },
+        content = function(file){
+            write.csv(df_merged, file)
+        }
+    )
 }
 
 # Run the application 

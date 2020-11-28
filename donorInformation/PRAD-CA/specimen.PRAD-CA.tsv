@@ -1,0 +1,518 @@
+icgc_specimen_id	project_code	study_specimen_involved_in	submitted_specimen_id	icgc_donor_id	submitted_donor_id	specimen_type	specimen_type_other	specimen_interval	specimen_donor_treatment_type	specimen_donor_treatment_type_other	specimen_processing	specimen_processing_other	specimen_storage	specimen_storage_other	tumour_confirmed	specimen_biobank	specimen_biobank_id	specimen_available	tumour_histological_type	tumour_grading_system	tumour_grade	tumour_grade_supplemental	tumour_stage_system	tumour_stage	tumour_stage_supplemental	digital_image_of_stained_section	percentage_cellularity	level_of_cellularity
+SP196079	PRAD-CA		CPCG0521-F1	DO229393	CPCG0521	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+4		TNM	5				
+SP196125	PRAD-CA		CPCG0521-B1	DO229393	CPCG0521	Normal - blood derived			no treatment				frozen, -70 freezer										TNM					
+SP196121	PRAD-CA		CPCG0522-F1	DO229392	CPCG0522	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	NA		TNM	5				
+SP196148	PRAD-CA		CPCG0522-B1	DO229392	CPCG0522	Normal - blood derived			no treatment				frozen, -70 freezer										TNM					
+SP195923	PRAD-CA		CPCG0402-B1	DO229395	CPCG0402	Normal - blood derived			no treatment				frozen, -70 freezer										TNM					
+SP196010	PRAD-CA		CPCG0402-F1	DO229395	CPCG0402	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	4+5		TNM	6				
+SP195837	PRAD-CA		CPCG0524-F1	DO229394	CPCG0524	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+3		TNM	3				
+SP195884	PRAD-CA		CPCG0524-B1	DO229394	CPCG0524	Normal - blood derived			no treatment				frozen, -70 freezer										TNM					
+SP195873	PRAD-CA		CPCG0408-F1	DO229397	CPCG0408	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	4+4		TNM	1				
+SP196092	PRAD-CA		CPCG0408-B1	DO229397	CPCG0408	Normal - blood derived			no treatment				frozen, -70 freezer										TNM					
+SP196109	PRAD-CA		CPCG0523-B1	DO229396	CPCG0523	Normal - blood derived			no treatment				frozen, -70 freezer										TNM					
+SP195894	PRAD-CA		CPCG0523-F1	DO229396	CPCG0523	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+3		TNM	3				
+SP196123	PRAD-CA		CPCG0406-B1	DO229399	CPCG0406	Normal - blood derived			no treatment				frozen, -70 freezer										TNM					
+SP196114	PRAD-CA		CPCG0406-F1	DO229399	CPCG0406	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+4		TNM	3				
+SP196108	PRAD-CA		CPCG0526-F1	DO229398	CPCG0526	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason			TNM	4				
+SP195853	PRAD-CA		CPCG0526-B1	DO229398	CPCG0526	Normal - blood derived			no treatment				frozen, -70 freezer										TNM					
+SP196053	PRAD-CA		CPCG0465-B1	DO229497	CPCG0465	Normal - blood derived			no treatment				frozen, -70 freezer										TNM					
+SP195988	PRAD-CA		CPCG0465-F1	DO229497	CPCG0465	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+4		TNM	4				
+SP196124	PRAD-CA		CPCG0428-F1	DO229413	CPCG0428	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+4		TNM	3				
+SP196144	PRAD-CA		CPCG0428-B1	DO229413	CPCG0428	Normal - blood derived			no treatment				frozen, -70 freezer										TNM					
+SP196139	PRAD-CA		CPCG0532-F1	DO229415	CPCG0532	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+3		TNM	3				
+SP195977	PRAD-CA		CPCG0532-B1	DO229415	CPCG0532	Normal - blood derived			no treatment				frozen, -70 freezer										TNM					
+SP196070	PRAD-CA		CPCG0534-B1	DO229417	CPCG0534	Normal - blood derived			no treatment				frozen, -70 freezer										TNM					
+SP195866	PRAD-CA		CPCG0534-F1	DO229417	CPCG0534	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	NA		TNM	3				
+SP196135	PRAD-CA		CPCG0531-F1	DO229419	CPCG0531	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+3		TNM	3				
+SP195953	PRAD-CA		CPCG0531-B1	DO229419	CPCG0531	Normal - blood derived			no treatment				frozen, -70 freezer										TNM					
+SP195925	PRAD-CA		CPCG0540-B1	DO229410	CPCG0540	Normal - blood derived			no treatment				frozen, -70 freezer										TNM					
+SP196019	PRAD-CA		CPCG0540-F1	DO229410	CPCG0540	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason			TNM	3				
+SP195984	PRAD-CA		CPCG0426-F1	DO229411	CPCG0426	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	NA		TNM	3				
+SP196027	PRAD-CA		CPCG0426-B1	DO229411	CPCG0426	Normal - blood derived			no treatment				frozen, -70 freezer										TNM					
+SP196051	PRAD-CA		CPCG0415-B1	DO229425	CPCG0415	Normal - blood derived			no treatment				frozen, -70 freezer										TNM					
+SP195921	PRAD-CA		CPCG0415-F1	DO229425	CPCG0415	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+3		TNM	3				
+SP196083	PRAD-CA		CPCG0418-F1	DO229427	CPCG0418	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+3		TNM	3				
+SP196131	PRAD-CA		CPCG0418-B1	DO229427	CPCG0418	Normal - blood derived			no treatment				frozen, -70 freezer										TNM					
+SP196006	PRAD-CA		CPCG0539-F1	DO229429	CPCG0539	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason			TNM	3				
+SP196087	PRAD-CA		CPCG0539-B1	DO229429	CPCG0539	Normal - blood derived			no treatment				frozen, -70 freezer										TNM					
+SP196141	PRAD-CA		CPCG0416-F1	DO229421	CPCG0416	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+4		TNM	5				
+SP195944	PRAD-CA		CPCG0416-B1	DO229421	CPCG0416	Normal - blood derived			no treatment				frozen, -70 freezer										TNM					
+SP196050	PRAD-CA		CPCG0537-F1	DO229423	CPCG0537	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+3		TNM	6				
+SP195862	PRAD-CA		CPCG0537-B1	DO229423	CPCG0537	Normal - blood derived			no treatment				frozen, -70 freezer										TNM					
+SP196106	PRAD-CA		CPCG0097-F1	DO229435	CPCG0097	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+3		TNM	3				
+SP196057	PRAD-CA		CPCG0097-B1	DO229435	CPCG0097	Normal - blood derived			no treatment				frozen, -70 freezer										TNM					
+SP195980	PRAD-CA		CPCG0092-F1	DO229437	CPCG0092	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	4+4		TNM	4				
+SP195872	PRAD-CA		CPCG0092-B1	DO229437	CPCG0092	Normal - blood derived			no treatment				frozen, -70 freezer										TNM					
+SP196098	PRAD-CA		CPCG0445-B1	DO229439	CPCG0445	Normal - blood derived			no treatment				frozen, -70 freezer										TNM					
+SP195860	PRAD-CA		CPCG0445-F1	DO229439	CPCG0445	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	4+3		TNM	4				
+SP195910	PRAD-CA		CPCG0090-F1	DO229431	CPCG0090	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+3		TNM	3				
+SP195861	PRAD-CA		CPCG0090-B1	DO229431	CPCG0090	Normal - blood derived			no treatment				frozen, -70 freezer										TNM					
+SP196033	PRAD-CA		CPCG0096-F1	DO229433	CPCG0096	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+3		TNM	3				
+SP195958	PRAD-CA		CPCG0096-B1	DO229433	CPCG0096	Normal - blood derived			no treatment				frozen, -70 freezer										TNM					
+SP196117	PRAD-CA		CPCG0448-F1	DO229449	CPCG0448	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+3		TNM	3				
+SP196072	PRAD-CA		CPCG0448-B1	DO229449	CPCG0448	Normal - blood derived			no treatment				frozen, -70 freezer										TNM					
+SP195870	PRAD-CA		CPCG0569-F1	DO229448	CPCG0569	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason			TNM	5				
+SP195892	PRAD-CA		CPCG0569-B1	DO229448	CPCG0569	Normal - blood derived			no treatment				frozen, -70 freezer										TNM					
+SP196118	PRAD-CA		CPCG0568-B1	DO229441	CPCG0568	Normal - blood derived			no treatment				frozen, -70 freezer										TNM					
+SP195888	PRAD-CA		CPCG0568-F1	DO229441	CPCG0568	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason			TNM	3				
+SP195871	PRAD-CA		CPCG0204-F1	DO229443	CPCG0204	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+4		TNM	2				
+SP195847	PRAD-CA		CPCG0204-B1	DO229443	CPCG0204	Normal - blood derived			no treatment				frozen, -70 freezer										TNM					
+SP196013	PRAD-CA		CPCG0563-F1	DO229445	CPCG0563	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	NA		TNM	5				
+SP195943	PRAD-CA		CPCG0563-B1	DO229445	CPCG0563	Normal - blood derived			no treatment				frozen, -70 freezer										TNM					
+SP195933	PRAD-CA		CPCG0435-F1	DO229457	CPCG0435	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+4		TNM	4				
+SP196054	PRAD-CA		CPCG0435-B1	DO229457	CPCG0435	Normal - blood derived			no treatment				frozen, -70 freezer										TNM					
+SP196105	PRAD-CA		CPCG0434-B1	DO229451	CPCG0434	Normal - blood derived			no treatment				frozen, -70 freezer										TNM					
+SP196041	PRAD-CA		CPCG0434-F1	DO229451	CPCG0434	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+4		TNM	3				
+SP196088	PRAD-CA		CPCG0556-F1	DO229454	CPCG0556	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+4		TNM	7				
+SP195931	PRAD-CA		CPCG9004-P1	DO229469	CPCG9004	Primary tumour - solid tissue			no treatment				paraffin block		yes				Adenocarcinoma	Gleason			TNM					
+SP195929	PRAD-CA		CPCG9004-P2	DO229469	CPCG9004	Primary tumour - solid tissue			no treatment				paraffin block		yes				Adenocarcinoma	Gleason			TNM					
+SP196133	PRAD-CA		CPCG0439-F1	DO229461	CPCG0439	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+4		TNM	4				
+SP195940	PRAD-CA		CPCG0439-B1	DO229461	CPCG0439	Normal - blood derived			no treatment				frozen, -70 freezer										TNM					
+SP196002	PRAD-CA		CPCG9002-B1	DO229464	CPCG9002	Normal - blood derived			no treatment				frozen, -70 freezer										TNM					
+SP195854	PRAD-CA		CPCG9002-P1	DO229464	CPCG9002	Primary tumour - solid tissue			no treatment				paraffin block		yes				Adenocarcinoma	Gleason			TNM					
+SP195856	PRAD-CA		CPCG9002-P2	DO229464	CPCG9002	Primary tumour - solid tissue			no treatment				paraffin block		yes				Adenocarcinoma	Gleason			TNM					
+SP195950	PRAD-CA		CPCG9001-B1	DO229466	CPCG9001	Normal - blood derived			no treatment				frozen, -70 freezer										TNM					
+SP196146	PRAD-CA		CPCG9001-P1	DO229466	CPCG9001	Primary tumour - solid tissue			no treatment				paraffin block		yes				Adenocarcinoma	Gleason			TNM					
+SP196145	PRAD-CA		CPCG9001-P2	DO229466	CPCG9001	Primary tumour - solid tissue			no treatment				paraffin block		yes				Adenocarcinoma	Gleason			TNM					
+SP195876	PRAD-CA		CPCG9003-P1	DO229472	CPCG9003	Primary tumour - solid tissue			no treatment				paraffin block		yes				Adenocarcinoma	Gleason			TNM					
+SP196060	PRAD-CA		CPCG9003-B1	DO229472	CPCG9003	Normal - blood derived			no treatment				frozen, -70 freezer										TNM					
+SP195878	PRAD-CA		CPCG9003-P2	DO229472	CPCG9003	Primary tumour - solid tissue			no treatment				paraffin block		yes				Adenocarcinoma	Gleason			TNM					
+SP196137	PRAD-CA		CPCG9005-B1	DO229477	CPCG9005	Normal - blood derived			no treatment				frozen, -70 freezer										TNM					
+SP196034	PRAD-CA		CPCG9005-P1	DO229477	CPCG9005	Primary tumour - solid tissue			no treatment				paraffin block		yes				Adenocarcinoma	Gleason			TNM					
+SP196026	PRAD-CA		CPCG9005-P2	DO229477	CPCG9005	Primary tumour - solid tissue			no treatment				paraffin block		yes				Adenocarcinoma	Gleason			TNM					
+SP196044	PRAD-CA		CPCG0467-B1	DO229481	CPCG0467	Normal - blood derived			no treatment				frozen, -70 freezer										TNM					
+SP195840	PRAD-CA		CPCG0467-F1	DO229481	CPCG0467	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+3		TNM	3				
+SP196095	PRAD-CA		CPCG0466-F1	DO229484	CPCG0466	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+4		TNM	3				
+SP196018	PRAD-CA		CPCG0466-B1	DO229484	CPCG0466	Normal - blood derived			no treatment				frozen, -70 freezer										TNM					
+SP196007	PRAD-CA		CPCG0463-F1	DO229487	CPCG0463	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+4		TNM	3				
+SP195930	PRAD-CA		CPCG0463-B1	DO229487	CPCG0463	Normal - blood derived			no treatment				frozen, -70 freezer										TNM					
+SP195865	PRAD-CA		CPCG0100-B1	DO229490	CPCG0100	Normal - blood derived			no treatment				frozen, -70 freezer										TNM					
+SP195846	PRAD-CA		CPCG0100-F1	DO229490	CPCG0100	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	4+5		TNM	4				
+SP195844	PRAD-CA		CPCG0100-F3	DO229490	CPCG0100	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason			TNM	4				
+SP195842	PRAD-CA		CPCG0100-F5	DO229490	CPCG0100	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason			TNM	4				
+SP195839	PRAD-CA		CPCG0100-F6	DO229490	CPCG0100	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason			TNM	4				
+SP195990	PRAD-CA		CPCG0462-F1	DO229492	CPCG0462	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	4+3		TNM	5				
+SP196142	PRAD-CA		CPCG0462-B1	DO229492	CPCG0462	Normal - blood derived			no treatment				frozen, -70 freezer										TNM					
+SP195850	PRAD-CA		CPCG0514-B1	DO229403	CPCG0514	Normal - blood derived			no treatment				frozen, -70 freezer										TNM					
+SP196048	PRAD-CA		CPCG0514-F1	DO229403	CPCG0514	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+3		TNM	4				
+SP196063	PRAD-CA		CPCG0519-B1	DO229402	CPCG0519	Normal - blood derived			no treatment				frozen, -70 freezer										TNM					
+SP195993	PRAD-CA		CPCG0519-F1	DO229402	CPCG0519	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+4		TNM	5				
+SP195997	PRAD-CA		CPCG0070-B1	DO229405	CPCG0070	Normal - blood derived			no treatment				frozen, -70 freezer										TNM					
+SP196089	PRAD-CA		CPCG0070-F1	DO229405	CPCG0070	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+3		TNM	4				
+SP196076	PRAD-CA		CPCG0076-B1	DO229404	CPCG0076	Normal - blood derived			no treatment				frozen, -70 freezer										TNM					
+SP196128	PRAD-CA		CPCG0076-F1	DO229404	CPCG0076	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+3		TNM	4				
+SP196000	PRAD-CA		CPCG0423-F1	DO229407	CPCG0423	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	4+3		TNM	3				
+SP196084	PRAD-CA		CPCG0423-B1	DO229407	CPCG0423	Normal - blood derived			no treatment				frozen, -70 freezer										TNM					
+SP195967	PRAD-CA		CPCG0071-B1	DO229406	CPCG0071	Normal - blood derived			no treatment				frozen, -70 freezer										TNM					
+SP196069	PRAD-CA		CPCG0071-F1	DO229406	CPCG0071	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	4+3		TNM	3				
+SP196096	PRAD-CA		CPCG0545-B1	DO229409	CPCG0545	Normal - blood derived			no treatment				frozen, -70 freezer										TNM					
+SP195882	PRAD-CA		CPCG0545-F1	DO229409	CPCG0545	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason			TNM	3				
+SP195982	PRAD-CA		CPCG0082-B1	DO229401	CPCG0082	Normal - blood derived			no treatment				frozen, -70 freezer										TNM					
+SP196064	PRAD-CA		CPCG0082-F1	DO229401	CPCG0082	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	4+3		TNM	4				
+SP196093	PRAD-CA		CPCG0527-B1	DO229400	CPCG0527	Normal - blood derived			no treatment				frozen, -70 freezer										TNM					
+SP195938	PRAD-CA		CPCG0527-F1	DO229400	CPCG0527	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason			TNM	3				
+SP195949	PRAD-CA		CPCG0489-B1	DO229536	CPCG0489	Normal - blood derived			no treatment				frozen, -70 freezer										TNM					
+SP196058	PRAD-CA		CPCG0489-F1	DO229536	CPCG0489	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	4+3		TNM	3				
+SP196056	PRAD-CA		CPCG0005-B1	DO229538	CPCG0005	Normal - blood derived			no treatment				frozen, -70 freezer										TNM					
+SP195936	PRAD-CA		CPCG0005-F1	DO229538	CPCG0005	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+3		TNM	4				
+SP196126	PRAD-CA		CPCG0450-B1	DO229531	CPCG0450	Normal - blood derived			no treatment				frozen, -70 freezer										TNM					
+SP195934	PRAD-CA		CPCG0450-F1	DO229531	CPCG0450	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+3		TNM	3				
+SP196090	PRAD-CA		CPCG0126-F1	DO229533	CPCG0126	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+3		TNM	4				
+SP196134	PRAD-CA		CPCG0126-B1	DO229533	CPCG0126	Normal - blood derived			no treatment				frozen, -70 freezer										TNM					
+SP196068	PRAD-CA		CPCG0243-F1	DO229548	CPCG0243	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+3		TNM	5				
+SP196115	PRAD-CA		CPCG0243-B1	DO229548	CPCG0243	Normal - blood derived			no treatment				frozen, -70 freezer										TNM					
+SP195874	PRAD-CA		CPCG0122-F1	DO229549	CPCG0122	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+3		TNM	3				
+SP195946	PRAD-CA		CPCG0122-B1	DO229549	CPCG0122	Normal - blood derived			no treatment				frozen, -70 freezer										TNM					
+SP195971	PRAD-CA		CPCG0235-F1	DO229557	CPCG0235	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	4+4		TNM	4				
+SP196067	PRAD-CA		CPCG0235-B1	DO229557	CPCG0235	Normal - blood derived			no treatment				frozen, -70 freezer										TNM					
+SP195857	PRAD-CA		CPCG0240-B1	DO229556	CPCG0240	Normal - blood derived			no treatment				frozen, -70 freezer										TNM					
+SP196140	PRAD-CA		CPCG0240-F1	DO229556	CPCG0240	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+4		TNM	4				
+SP196038	PRAD-CA		CPCG0474-F1	DO229559	CPCG0474	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+3		TNM	3				
+SP195962	PRAD-CA		CPCG0474-B1	DO229559	CPCG0474	Normal - blood derived			no treatment				frozen, -70 freezer										TNM					
+SP195902	PRAD-CA		CPCG0237-F1	DO229558	CPCG0237	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+3		TNM	4				
+SP196037	PRAD-CA		CPCG0237-B1	DO229558	CPCG0237	Normal - blood derived			no treatment				frozen, -70 freezer										TNM					
+SP196015	PRAD-CA		CPCG0487-F1	DO229551	CPCG0487	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	4+3		TNM	3				
+SP196061	PRAD-CA		CPCG0487-B1	DO229551	CPCG0487	Normal - blood derived			no treatment				frozen, -70 freezer										TNM					
+SP196136	PRAD-CA		CPCG0484-B1	DO229550	CPCG0484	Normal - blood derived			no treatment				frozen, -70 freezer										TNM					
+SP195965	PRAD-CA		CPCG0484-F1	DO229550	CPCG0484	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+4		TNM	4				
+SP195864	PRAD-CA		CPCG0008-B1	DO229553	CPCG0008	Normal - blood derived			no treatment				frozen, -70 freezer										TNM					
+SP195838	PRAD-CA		CPCG0008-F1	DO229553	CPCG0008	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+4		TNM	4				
+SP195927	PRAD-CA		CPCG0486-B1	DO229552	CPCG0486	Normal - blood derived			no treatment				frozen, -70 freezer										TNM					
+SP196004	PRAD-CA		CPCG0486-F1	DO229552	CPCG0486	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	NA		TNM	3				
+SP195904	PRAD-CA		CPCG0482-B1	DO229555	CPCG0482	Normal - blood derived			no treatment				frozen, -70 freezer										TNM					
+SP196116	PRAD-CA		CPCG0482-F1	DO229555	CPCG0482	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+3		TNM	5				
+SP196073	PRAD-CA		CPCG0483-B1	DO229554	CPCG0483	Normal - blood derived			no treatment				frozen, -70 freezer										TNM					
+SP196127	PRAD-CA		CPCG0483-F1	DO229554	CPCG0483	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+4		TNM	3				
+SP196081	PRAD-CA		CPCG0257-F1	DO229568	CPCG0257	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+3		TNM	4				
+SP195974	PRAD-CA		CPCG0257-B1	DO229568	CPCG0257	Normal - blood derived			no treatment				frozen, -70 freezer										TNM					
+SP195947	PRAD-CA		CPCG0382-F1	DO229567	CPCG0382	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	4+4		TNM	3				
+SP196021	PRAD-CA		CPCG0382-B1	DO229567	CPCG0382	Normal - blood derived			no treatment				frozen, -70 freezer										TNM					
+SP195973	PRAD-CA		CPCG0499-F1	DO229569	CPCG0499	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason			TNM	4				
+SP196024	PRAD-CA		CPCG0499-B1	DO229569	CPCG0499	Normal - blood derived			no treatment				frozen, -70 freezer										TNM					
+SP195848	PRAD-CA		CPCG0594-F1	DO229560	CPCG0594	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason			TNM	3				
+SP196066	PRAD-CA		CPCG0594-B1	DO229560	CPCG0594	Normal - blood derived			no treatment				frozen, -70 freezer										TNM					
+SP196086	PRAD-CA		CPCG0470-F1	DO229562	CPCG0470	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+3		TNM	3				
+SP195868	PRAD-CA		CPCG0470-B1	DO229562	CPCG0470	Normal - blood derived			no treatment				frozen, -70 freezer										TNM					
+SP196078	PRAD-CA		CPCG0119-B1	DO229561	CPCG0119	Normal - blood derived			no treatment				frozen, -70 freezer										TNM					
+SP196075	PRAD-CA		CPCG0119-F1	DO229561	CPCG0119	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+4		TNM	4				
+SP196099	PRAD-CA		CPCG0471-F1	DO229564	CPCG0471	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	4+3		TNM	4				
+SP195886	PRAD-CA		CPCG0471-B1	DO229564	CPCG0471	Normal - blood derived			no treatment				frozen, -70 freezer										TNM					
+SP196147	PRAD-CA		CPCG0472-F1	DO229563	CPCG0472	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+4		TNM	5				
+SP196119	PRAD-CA		CPCG0472-B1	DO229563	CPCG0472	Normal - blood derived			no treatment				frozen, -70 freezer										TNM					
+SP195858	PRAD-CA		CPCG0022-B1	DO229566	CPCG0022	Normal - blood derived			no treatment				frozen, -70 freezer										TNM					
+SP195890	PRAD-CA		CPCG0022-F1	DO229566	CPCG0022	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+3		TNM	3				
+SP196042	PRAD-CA		CPCG0027-F1	DO229565	CPCG0027	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+3		TNM	3				
+SP195968	PRAD-CA		CPCG0027-B1	DO229565	CPCG0027	Normal - blood derived			no treatment				frozen, -70 freezer										TNM					
+SP196100	PRAD-CA		CPCG0036-F1	DO229579	CPCG0036	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+4		TNM	4				
+SP196011	PRAD-CA		CPCG0036-B1	DO229579	CPCG0036	Normal - blood derived			no treatment				frozen, -70 freezer										TNM					
+SP195986	PRAD-CA		CPCG0396-F1	DO229578	CPCG0396	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+4		TNM	3				
+SP196071	PRAD-CA		CPCG0396-B1	DO229578	CPCG0396	Normal - blood derived			no treatment				frozen, -70 freezer										TNM					
+SP196055	PRAD-CA		CPCG0498-B1	DO229571	CPCG0498	Normal - blood derived			no treatment				frozen, -70 freezer										TNM					
+SP196003	PRAD-CA		CPCG0498-F1	DO229571	CPCG0498	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	NA		TNM	3				
+SP196122	PRAD-CA		CPCG0496-B1	DO229570	CPCG0496	Normal - blood derived			no treatment				frozen, -70 freezer										TNM					
+SP195932	PRAD-CA		CPCG0496-F1	DO229570	CPCG0496	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason			TNM	3				
+SP195896	PRAD-CA		CPCG0493-B1	DO229573	CPCG0493	Normal - blood derived			no treatment				frozen, -70 freezer										TNM					
+SP196110	PRAD-CA		CPCG0493-F1	DO229573	CPCG0493	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason			TNM	3				
+SP195912	PRAD-CA		CPCG0377-B1	DO229572	CPCG0377	Normal - blood derived			no treatment				frozen, -70 freezer										TNM					
+SP196120	PRAD-CA		CPCG0377-F1	DO229572	CPCG0377	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	4+4		TNM	3				
+SP195900	PRAD-CA		CPCG0607-B1	DO229575	CPCG0607	Normal - blood derived			no treatment				frozen, -70 freezer										TNM					
+SP196008	PRAD-CA		CPCG0607-F1	DO229575	CPCG0607	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason			TNM	5				
+SP195852	PRAD-CA		CPCG0490-F1	DO229574	CPCG0490	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason			TNM	3				
+SP196080	PRAD-CA		CPCG0490-B1	DO229574	CPCG0490	Normal - blood derived			no treatment				frozen, -70 freezer										TNM					
+SP196094	PRAD-CA		CPCG0602-B1	DO229577	CPCG0602	Normal - blood derived			no treatment				frozen, -70 freezer										TNM					
+SP196103	PRAD-CA		CPCG0602-F1	DO229577	CPCG0602	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason			TNM	4				
+SP196107	PRAD-CA		CPCG0603-B1	DO229576	CPCG0603	Normal - blood derived			no treatment				frozen, -70 freezer										TNM					
+SP196143	PRAD-CA		CPCG0603-F1	DO229576	CPCG0603	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason			TNM	5				
+SP195920	PRAD-CA		CPCG0398-F1	DO229580	CPCG0398	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+4		TNM	4				
+SP196029	PRAD-CA		CPCG0398-B1	DO229580	CPCG0398	Normal - blood derived			no treatment				frozen, -70 freezer										TNM					
+SP195999	PRAD-CA		CPCG0509-B1	DO229589	CPCG0509	Normal - blood derived			no treatment				frozen, -70 freezer										TNM					
+SP196149	PRAD-CA		CPCG0509-F1	DO229589	CPCG0509	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason			TNM	5				
+SP196065	PRAD-CA		CPCG0394-B1	DO229582	CPCG0394	Normal - blood derived			no treatment				frozen, -70 freezer										TNM					
+SP195996	PRAD-CA		CPCG0394-F1	DO229582	CPCG0394	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	4+3		TNM	3				
+SP196091	PRAD-CA		CPCG0395-F1	DO229581	CPCG0395	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+4		TNM	4				
+SP195981	PRAD-CA		CPCG0395-B1	DO229581	CPCG0395	Normal - blood derived			no treatment				frozen, -70 freezer										TNM					
+SP195859	PRAD-CA		CPCG0502-F1	DO229584	CPCG0502	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+4		TNM	4				
+SP195898	PRAD-CA		CPCG0502-B1	DO229584	CPCG0502	Normal - blood derived			no treatment				frozen, -70 freezer										TNM					
+SP195867	PRAD-CA		CPCG0500-F1	DO229583	CPCG0500	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+4		TNM	3				
+SP196082	PRAD-CA		CPCG0500-B1	DO229583	CPCG0500	Normal - blood derived			no treatment				frozen, -70 freezer										TNM					
+SP196101	PRAD-CA		CPCG0187-B1	DO229586	CPCG0187	Normal - blood derived			no treatment				frozen, -70 freezer										TNM					
+SP195987	PRAD-CA		CPCG0187-F1	DO229586	CPCG0187	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	4+4		TNM	3				
+SP195906	PRAD-CA		CPCG0067-F1	DO229585	CPCG0067	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+4		TNM	5				
+SP195863	PRAD-CA		CPCG0067-B1	DO229585	CPCG0067	Normal - blood derived			no treatment				frozen, -70 freezer										TNM					
+SP196043	PRAD-CA		CPCG0507-B1	DO229588	CPCG0507	Normal - blood derived			no treatment				frozen, -70 freezer										TNM					
+SP195970	PRAD-CA		CPCG0507-F1	DO229588	CPCG0507	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason			TNM	3				
+SP196129	PRAD-CA		CPCG0508-F1	DO229587	CPCG0508	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	4+3		TNM	3				
+SP195937	PRAD-CA		CPCG0508-B1	DO229587	CPCG0508	Normal - blood derived			no treatment				frozen, -70 freezer										TNM					
+SP195851	PRAD-CA		CPCG0503-B1	DO229591	CPCG0503	Normal - blood derived			no treatment				frozen, -70 freezer										TNM					
+SP196074	PRAD-CA		CPCG0503-F1	DO229591	CPCG0503	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	NA		TNM	5				
+SP195941	PRAD-CA		CPCG0504-F1	DO229590	CPCG0504	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason			TNM	3				
+SP196062	PRAD-CA		CPCG0504-B1	DO229590	CPCG0504	Normal - blood derived			no treatment				frozen, -70 freezer										TNM					
+SP196036	PRAD-CA		CPCG0050-F1	DO229593	CPCG0050	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+3		TNM	3				
+SP195956	PRAD-CA		CPCG0050-B1	DO229593	CPCG0050	Normal - blood derived			no treatment				frozen, -70 freezer										TNM					
+SP195952	PRAD-CA		CPCG0059-B1	DO229592	CPCG0059	Normal - blood derived			no treatment				frozen, -70 freezer										TNM					
+SP196059	PRAD-CA		CPCG0059-F1	DO229592	CPCG0059	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+4		TNM	3				
+SP195961	PRAD-CA		CPCG0464-F1	DO229504	CPCG0464	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+3		TNM	4				
+SP196030	PRAD-CA		CPCG0464-B1	DO229504	CPCG0464	Normal - blood derived			no treatment				frozen, -70 freezer										TNM					
+SP196022	PRAD-CA		CPCG0349-F1	DO229509	CPCG0349	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	4+4		TNM	3				
+SP196016	PRAD-CA		CPCG0349-B1	DO229509	CPCG0349	Normal - blood derived			no treatment				frozen, -70 freezer										TNM					
+SP195855	PRAD-CA		CPCG0456-F1	DO229513	CPCG0456	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	4+3		TNM	5				
+SP196085	PRAD-CA		CPCG0456-B1	DO229513	CPCG0456	Normal - blood derived			no treatment				frozen, -70 freezer										TNM					
+SP196104	PRAD-CA		CPCG0455-F1	DO229517	CPCG0455	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	4+3		TNM	3				
+SP196031	PRAD-CA		CPCG0455-B1	DO229517	CPCG0455	Normal - blood derived			no treatment				frozen, -70 freezer										TNM					
+SP195849	PRAD-CA		CPCG0457-B1	DO229523	CPCG0457	Normal - blood derived			no treatment				frozen, -70 freezer										TNM					
+SP195880	PRAD-CA		CPCG0457-F1	DO229523	CPCG0457	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	4+4		TNM	5				
+SP196097	PRAD-CA		CPCG0333-B1	DO229525	CPCG0333	Normal - blood derived			no treatment				frozen, -70 freezer										TNM					
+SP196138	PRAD-CA		CPCG0333-F1	DO229525	CPCG0333	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	4+3		TNM	3				
+SP195976	PRAD-CA		CPCG0453-F1	DO229527	CPCG0453	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	4+4		TNM	4				
+SP196046	PRAD-CA		CPCG0453-B1	DO229527	CPCG0453	Normal - blood derived			no treatment				frozen, -70 freezer										TNM					
+SP195908	PRAD-CA		CPCG0459-B1	DO229529	CPCG0459	Normal - blood derived			no treatment				frozen, -70 freezer										TNM					
+SP196102	PRAD-CA		CPCG0459-F1	DO229529	CPCG0459	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+3		TNM	3				
+SP196077	PRAD-CA		CPCG0579-F1	DO229521	CPCG0579	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason			TNM	4				
+SP196112	PRAD-CA		CPCG0579-B1	DO229521	CPCG0579	Normal - blood derived			no treatment				frozen, -70 freezer										TNM					
+SP102634	PRAD-CA		CPCG0102-P1	DO46793	CPCG0102	Primary tumour - solid tissue			no treatment				paraffin block		yes				Adenocarcinoma	Gleason	4+4		TNM	5				
+SP102633	PRAD-CA	PCAWG	CPCG0102-F1	DO46793	CPCG0102	Primary tumour - solid tissue		138	no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	4+3		TNM	5				
+SP102632	PRAD-CA	PCAWG	CPCG0102-B1	DO46793	CPCG0102	Normal - blood derived		138	no treatment				frozen, -70 freezer										TNM					
+SP102635	PRAD-CA		CPCG0102-P2	DO46793	CPCG0102	Primary tumour - solid tissue			no treatment				paraffin block		yes				Adenocarcinoma	Gleason	4+4		TNM	5				
+SP102644	PRAD-CA		CPCG0103-P7	DO46794	CPCG0103	Primary tumour - solid tissue			no treatment				paraffin block		yes				Adenocarcinoma	Gleason	3+4		TNM	4				
+SP102637	PRAD-CA		CPCG0103-F1	DO46794	CPCG0103	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+4		TNM	4				
+SP102642	PRAD-CA		CPCG0103-P5	DO46794	CPCG0103	Primary tumour - solid tissue			no treatment				paraffin block		yes				Adenocarcinoma	Gleason	3+4		TNM	4				
+SP102640	PRAD-CA		CPCG0103-P3	DO46794	CPCG0103	Primary tumour - solid tissue			no treatment				paraffin block		yes				Adenocarcinoma	Gleason	3+4		TNM	4				
+SP102638	PRAD-CA		CPCG0103-P1	DO46794	CPCG0103	Primary tumour - solid tissue			no treatment				paraffin block		yes				Adenocarcinoma	Gleason	3+4		TNM	4				
+SP102636	PRAD-CA		CPCG0103-B1	DO46794	CPCG0103	Normal - blood derived			no treatment				frozen, -70 freezer										TNM					
+SP102641	PRAD-CA		CPCG0103-P4	DO46794	CPCG0103	Primary tumour - solid tissue			no treatment				paraffin block		yes				Adenocarcinoma	Gleason	3+4		TNM	4				
+SP102645	PRAD-CA		CPCG0103-P8	DO46794	CPCG0103	Primary tumour - solid tissue			no treatment				paraffin block		yes				Adenocarcinoma	Gleason	3+4		TNM	4				
+SP102639	PRAD-CA		CPCG0103-P2	DO46794	CPCG0103	Primary tumour - solid tissue			no treatment				paraffin block		yes				Adenocarcinoma	Gleason	3+4		TNM	4				
+SP196111	PRAD-CA		CPCG0103-F4	DO46794	CPCG0103	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+4		TNM	4				
+SP102643	PRAD-CA		CPCG0103-P6	DO46794	CPCG0103	Primary tumour - solid tissue			no treatment				paraffin block		yes				Adenocarcinoma	Gleason	3+4		TNM	4				
+SP196113	PRAD-CA		CPCG0103-F2	DO46794	CPCG0103	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+4		TNM	4				
+SP102647	PRAD-CA	PCAWG	CPCG0183-F1	DO46795	CPCG0183	Primary tumour - solid tissue		70	no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	4+3		TNM	3				
+SP102646	PRAD-CA	PCAWG	CPCG0183-B1	DO46795	CPCG0183	Normal - blood derived		70	no treatment				frozen, -70 freezer										TNM					
+SP102650	PRAD-CA		CPCG0183-P3	DO46795	CPCG0183	Primary tumour - solid tissue			no treatment				paraffin block		yes				Adenocarcinoma	Gleason	3+4		TNM	3				
+SP102648	PRAD-CA		CPCG0183-P1	DO46795	CPCG0183	Primary tumour - solid tissue			no treatment				paraffin block		yes				Adenocarcinoma	Gleason	3+4		TNM	3				
+SP102649	PRAD-CA		CPCG0183-P2	DO46795	CPCG0183	Primary tumour - solid tissue			no treatment				paraffin block		yes				Adenocarcinoma	Gleason	3+4		TNM	3				
+SP102651	PRAD-CA	PCAWG	CPCG0184-B1	DO46796	CPCG0184	Normal - blood derived		74	no treatment				frozen, -70 freezer										TNM					
+SP102652	PRAD-CA	PCAWG	CPCG0184-F1	DO46796	CPCG0184	Primary tumour - solid tissue		74	no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	4+3		TNM	5				
+SP102655	PRAD-CA		CPCG0184-P3	DO46796	CPCG0184	Primary tumour - solid tissue			no treatment				paraffin block		yes				Adenocarcinoma	Gleason	4+5		TNM	5				
+SP102653	PRAD-CA		CPCG0184-P1	DO46796	CPCG0184	Primary tumour - solid tissue			no treatment				paraffin block		yes				Adenocarcinoma	Gleason	4+5		TNM	5				
+SP102654	PRAD-CA		CPCG0184-P2	DO46796	CPCG0184	Primary tumour - solid tissue			no treatment				paraffin block		yes				Adenocarcinoma	Gleason	4+5		TNM	5				
+SP102656	PRAD-CA		CPCG0184-P4	DO46796	CPCG0184	Primary tumour - solid tissue			no treatment				paraffin block		yes				Adenocarcinoma	Gleason	4+5		TNM	5				
+SP102625	PRAD-CA	PCAWG	CPCG0020-B1	DO46790	CPCG0020	Normal - blood derived		14	no treatment				frozen, -70 freezer										TNM					
+SP102626	PRAD-CA	PCAWG	CPCG0020-F1	DO46790	CPCG0020	Primary tumour - solid tissue		14	no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+4		TNM	3				
+SP102628	PRAD-CA		CPCG0042-F1	DO46791	CPCG0042	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	4+3		TNM	5				
+SP102627	PRAD-CA		CPCG0042-B1	DO46791	CPCG0042	Normal - blood derived			no treatment				frozen, -70 freezer										TNM					
+SP102629	PRAD-CA	PCAWG	CPCG0099-B1	DO46792	CPCG0099	Normal - blood derived		42	no treatment				frozen, -70 freezer										TNM					
+SP102630	PRAD-CA	PCAWG	CPCG0099-F1	DO46792	CPCG0099	Primary tumour - solid tissue		42	no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+4		TNM	3				
+SP102631	PRAD-CA		CPCG0099-P1	DO46792	CPCG0099	Primary tumour - solid tissue			no treatment				paraffin block		yes				Adenocarcinoma	Gleason	3+4		TNM	3				
+SP102619	PRAD-CA	PCAWG	CPCG0001-B1	DO46787	CPCG0001	Normal - blood derived		154	no treatment				frozen, -70 freezer										TNM					
+SP102620	PRAD-CA	PCAWG	CPCG0001-F1	DO46787	CPCG0001	Primary tumour - solid tissue		154	no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+4		TNM	5				
+SP102621	PRAD-CA	PCAWG	CPCG0003-B1	DO46788	CPCG0003	Normal - blood derived		35	no treatment				frozen, -70 freezer										TNM					
+SP102622	PRAD-CA	PCAWG	CPCG0003-F1	DO46788	CPCG0003	Primary tumour - solid tissue		35	no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+4		TNM	4				
+SP102623	PRAD-CA	PCAWG	CPCG0006-B1	DO46789	CPCG0006	Normal - blood derived		87	no treatment				frozen, -70 freezer										TNM					
+SP102624	PRAD-CA	PCAWG	CPCG0006-F1	DO46789	CPCG0006	Primary tumour - solid tissue		87	no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	4+3		TNM	5				
+SP112775	PRAD-CA	PCAWG	CPCG0040-F1	DO51044	CPCG0040	Primary tumour - solid tissue		7	no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+4		TNM	3				
+SP112774	PRAD-CA	PCAWG	CPCG0040-B1	DO51044	CPCG0040	Normal - blood derived		7	no treatment				frozen, -70 freezer										TNM					
+SP112777	PRAD-CA	PCAWG	CPCG0046-F1	DO51045	CPCG0046	Primary tumour - solid tissue		48	no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	4+3		TNM	3				
+SP112776	PRAD-CA	PCAWG	CPCG0046-B1	DO51045	CPCG0046	Normal - blood derived		48	no treatment				frozen, -70 freezer										TNM					
+SP112778	PRAD-CA	PCAWG	CPCG0047-B1	DO51046	CPCG0047	Normal - blood derived		36	no treatment				frozen, -70 freezer										TNM					
+SP112779	PRAD-CA	PCAWG	CPCG0047-F1	DO51046	CPCG0047	Primary tumour - solid tissue		36	no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	4+3		TNM	6				
+SP112780	PRAD-CA	PCAWG	CPCG0048-B1	DO51047	CPCG0048	Normal - blood derived		0	no treatment				frozen, -70 freezer										TNM					
+SP112781	PRAD-CA	PCAWG	CPCG0048-F1	DO51047	CPCG0048	Primary tumour - solid tissue		0	no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+3		TNM	5				
+SP112782	PRAD-CA	PCAWG	CPCG0057-B1	DO51048	CPCG0057	Normal - blood derived		0	no treatment				frozen, -70 freezer										TNM					
+SP112783	PRAD-CA	PCAWG	CPCG0057-F1	DO51048	CPCG0057	Primary tumour - solid tissue		0	no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+3		TNM	4				
+SP112785	PRAD-CA	PCAWG	CPCG0063-F1	DO51049	CPCG0063	Primary tumour - solid tissue		91	no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	4+3		TNM	4				
+SP112784	PRAD-CA	PCAWG	CPCG0063-B1	DO51049	CPCG0063	Normal - blood derived		91	no treatment				frozen, -70 freezer										TNM					
+SP112882	PRAD-CA	PCAWG	CPCG0256-B1	DO51098	CPCG0256	Normal - blood derived		143	no treatment				frozen, -70 freezer										TNM					
+SP112883	PRAD-CA	PCAWG	CPCG0256-F1	DO51098	CPCG0256	Primary tumour - solid tissue		143	no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+4		TNM	3				
+SP112884	PRAD-CA	PCAWG	CPCG0258-B1	DO51099	CPCG0258	Normal - blood derived		49	no treatment				frozen, -70 freezer										TNM					
+SP112885	PRAD-CA	PCAWG	CPCG0258-F1	DO51099	CPCG0258	Primary tumour - solid tissue		49	no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+3		TNM	3				
+SP112866	PRAD-CA	PCAWG	CPCG0241-B1	DO51090	CPCG0241	Normal - blood derived		57	no treatment				frozen, -70 freezer										TNM					
+SP112867	PRAD-CA	PCAWG	CPCG0241-F1	DO51090	CPCG0241	Primary tumour - solid tissue		57	no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+4		TNM	3				
+SP112868	PRAD-CA	PCAWG	CPCG0242-B1	DO51091	CPCG0242	Normal - blood derived		118	no treatment				frozen, -70 freezer										TNM					
+SP112869	PRAD-CA	PCAWG	CPCG0242-F1	DO51091	CPCG0242	Primary tumour - solid tissue		118	no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	4+3		TNM	4				
+SP112871	PRAD-CA	PCAWG	CPCG0246-F1	DO51092	CPCG0246	Primary tumour - solid tissue		58	no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+3		TNM	3				
+SP112870	PRAD-CA	PCAWG	CPCG0246-B1	DO51092	CPCG0246	Normal - blood derived		58	no treatment				frozen, -70 freezer										TNM					
+SP112872	PRAD-CA	PCAWG	CPCG0248-B1	DO51093	CPCG0248	Normal - blood derived		73	no treatment				frozen, -70 freezer										TNM					
+SP112873	PRAD-CA	PCAWG	CPCG0248-F1	DO51093	CPCG0248	Primary tumour - solid tissue		73	no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+4		TNM	4				
+SP112875	PRAD-CA	PCAWG	CPCG0249-F1	DO51094	CPCG0249	Primary tumour - solid tissue		55	no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+4		TNM	3				
+SP112874	PRAD-CA	PCAWG	CPCG0249-B1	DO51094	CPCG0249	Normal - blood derived		55	no treatment				frozen, -70 freezer										TNM					
+SP112877	PRAD-CA	PCAWG	CPCG0250-F1	DO51095	CPCG0250	Primary tumour - solid tissue		182	no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+3		TNM	5				
+SP112876	PRAD-CA	PCAWG	CPCG0250-B1	DO51095	CPCG0250	Normal - blood derived		182	no treatment				frozen, -70 freezer										TNM					
+SP112879	PRAD-CA	PCAWG	CPCG0251-F1	DO51096	CPCG0251	Primary tumour - solid tissue		3	no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+4		TNM	4				
+SP112878	PRAD-CA	PCAWG	CPCG0251-B1	DO51096	CPCG0251	Normal - blood derived		3	no treatment				frozen, -70 freezer										TNM					
+SP112881	PRAD-CA	PCAWG	CPCG0255-F1	DO51097	CPCG0255	Primary tumour - solid tissue		196	no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+3		TNM	3				
+SP112880	PRAD-CA	PCAWG	CPCG0255-B1	DO51097	CPCG0255	Normal - blood derived		196	no treatment				frozen, -70 freezer										TNM					
+SP112861	PRAD-CA	PCAWG	CPCG0234-F1	DO51087	CPCG0234	Primary tumour - solid tissue		0	no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+4		TNM	3				
+SP112860	PRAD-CA	PCAWG	CPCG0234-B1	DO51087	CPCG0234	Normal - blood derived		0	no treatment				frozen, -70 freezer										TNM					
+SP112863	PRAD-CA	PCAWG	CPCG0236-F1	DO51088	CPCG0236	Primary tumour - solid tissue		108	no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	4+3		TNM	4				
+SP112862	PRAD-CA	PCAWG	CPCG0236-B1	DO51088	CPCG0236	Normal - blood derived		108	no treatment				frozen, -70 freezer										TNM					
+SP112864	PRAD-CA	PCAWG	CPCG0238-B1	DO51089	CPCG0238	Normal - blood derived		23	no treatment				frozen, -70 freezer										TNM					
+SP112865	PRAD-CA	PCAWG	CPCG0238-F1	DO51089	CPCG0238	Primary tumour - solid tissue		23	no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+4		TNM	5				
+SP112847	PRAD-CA	PCAWG	CPCG0210-F1	DO51080	CPCG0210	Primary tumour - solid tissue		153	no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	4+3		TNM	3				
+SP112846	PRAD-CA	PCAWG	CPCG0210-B1	DO51080	CPCG0210	Normal - blood derived		153	no treatment				frozen, -70 freezer										TNM					
+SP112849	PRAD-CA	PCAWG	CPCG0211-F1	DO51081	CPCG0211	Primary tumour - solid tissue		83	no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+4		TNM	4				
+SP112848	PRAD-CA	PCAWG	CPCG0211-B1	DO51081	CPCG0211	Normal - blood derived		83	no treatment				frozen, -70 freezer										TNM					
+SP112851	PRAD-CA	PCAWG	CPCG0212-F1	DO51082	CPCG0212	Primary tumour - solid tissue		15	no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+4		TNM	3				
+SP112850	PRAD-CA	PCAWG	CPCG0212-B1	DO51082	CPCG0212	Normal - blood derived		15	no treatment				frozen, -70 freezer										TNM					
+SP112852	PRAD-CA	PCAWG	CPCG0213-B1	DO51083	CPCG0213	Normal - blood derived		30	no treatment				frozen, -70 freezer										TNM					
+SP112853	PRAD-CA	PCAWG	CPCG0213-F1	DO51083	CPCG0213	Primary tumour - solid tissue		30	no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+4		TNM	4				
+SP112855	PRAD-CA	PCAWG	CPCG0217-F1	DO51084	CPCG0217	Primary tumour - solid tissue		50	no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+3		TNM	4				
+SP112854	PRAD-CA	PCAWG	CPCG0217-B1	DO51084	CPCG0217	Normal - blood derived		50	no treatment				frozen, -70 freezer										TNM					
+SP112857	PRAD-CA	PCAWG	CPCG0232-F1	DO51085	CPCG0232	Primary tumour - solid tissue		149	no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+4		TNM	3				
+SP112856	PRAD-CA	PCAWG	CPCG0232-B1	DO51085	CPCG0232	Normal - blood derived		149	no treatment				frozen, -70 freezer										TNM					
+SP112858	PRAD-CA	PCAWG	CPCG0233-B1	DO51086	CPCG0233	Normal - blood derived		92	no treatment				frozen, -70 freezer										TNM					
+SP112859	PRAD-CA	PCAWG	CPCG0233-F1	DO51086	CPCG0233	Primary tumour - solid tissue		92	no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	4+3		TNM	3				
+SP112838	PRAD-CA	PCAWG	CPCG0203-B1	DO51076	CPCG0203	Normal - blood derived		0	no treatment				frozen, -70 freezer										TNM					
+SP112839	PRAD-CA	PCAWG	CPCG0203-F1	DO51076	CPCG0203	Primary tumour - solid tissue		0	no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+4		TNM	4				
+SP112841	PRAD-CA	PCAWG	CPCG0205-F1	DO51077	CPCG0205	Primary tumour - solid tissue		0	no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+4		TNM	4				
+SP112840	PRAD-CA	PCAWG	CPCG0205-B1	DO51077	CPCG0205	Normal - blood derived		0	no treatment				frozen, -70 freezer										TNM					
+SP112842	PRAD-CA	PCAWG	CPCG0206-B1	DO51078	CPCG0206	Normal - blood derived		279	no treatment				frozen, -70 freezer										TNM					
+SP112843	PRAD-CA	PCAWG	CPCG0206-F1	DO51078	CPCG0206	Primary tumour - solid tissue		279	no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	4+3		TNM	3				
+SP112845	PRAD-CA	PCAWG	CPCG0208-F1	DO51079	CPCG0208	Primary tumour - solid tissue		91	no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+4		TNM	4				
+SP112844	PRAD-CA	PCAWG	CPCG0208-B1	DO51079	CPCG0208	Normal - blood derived		91	no treatment				frozen, -70 freezer										TNM					
+SP112827	PRAD-CA	PCAWG	CPCG0189-F1	DO51070	CPCG0189	Primary tumour - solid tissue		48	no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+4		TNM	4				
+SP112826	PRAD-CA	PCAWG	CPCG0189-B1	DO51070	CPCG0189	Normal - blood derived		48	no treatment				frozen, -70 freezer										TNM					
+SP112829	PRAD-CA	PCAWG	CPCG0190-F1	DO51071	CPCG0190	Primary tumour - solid tissue		118	no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+4		TNM	5				
+SP112828	PRAD-CA	PCAWG	CPCG0190-B1	DO51071	CPCG0190	Normal - blood derived		118	no treatment				frozen, -70 freezer										TNM					
+SP112830	PRAD-CA	PCAWG	CPCG0191-B1	DO51072	CPCG0191	Normal - blood derived		195	no treatment				frozen, -70 freezer										TNM					
+SP112831	PRAD-CA	PCAWG	CPCG0191-F1	DO51072	CPCG0191	Primary tumour - solid tissue		195	no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	4+3		TNM	4				
+SP112833	PRAD-CA	PCAWG	CPCG0196-F1	DO51073	CPCG0196	Primary tumour - solid tissue		239	no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	4+3		TNM	5				
+SP112832	PRAD-CA	PCAWG	CPCG0196-B1	DO51073	CPCG0196	Normal - blood derived		239	no treatment				frozen, -70 freezer										TNM					
+SP195992	PRAD-CA		CPCG0196-F3	DO51073	CPCG0196	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+4		TNM	5				
+SP195994	PRAD-CA		CPCG0196-F2	DO51073	CPCG0196	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+4		TNM	5				
+SP112835	PRAD-CA	PCAWG	CPCG0199-F1	DO51074	CPCG0199	Primary tumour - solid tissue		66	no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	4+3		TNM	4				
+SP112834	PRAD-CA	PCAWG	CPCG0199-B1	DO51074	CPCG0199	Normal - blood derived		66	no treatment				frozen, -70 freezer										TNM					
+SP112837	PRAD-CA	PCAWG	CPCG0201-F1	DO51075	CPCG0201	Primary tumour - solid tissue		4	no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	4+3		TNM	3				
+SP112836	PRAD-CA	PCAWG	CPCG0201-B1	DO51075	CPCG0201	Normal - blood derived		4	no treatment				frozen, -70 freezer										TNM					
+SP112816	PRAD-CA	PCAWG	CPCG0154-B1	DO51065	CPCG0154	Normal - blood derived		19	no treatment				frozen, -70 freezer										TNM					
+SP112817	PRAD-CA	PCAWG	CPCG0154-F1	DO51065	CPCG0154	Primary tumour - solid tissue		19	no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+3		TNM	4				
+SP112818	PRAD-CA	PCAWG	CPCG0158-B1	DO51066	CPCG0158	Normal - blood derived		18	no treatment				frozen, -70 freezer										TNM					
+SP112819	PRAD-CA	PCAWG	CPCG0158-F1	DO51066	CPCG0158	Primary tumour - solid tissue		18	no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+4		TNM	3				
+SP112821	PRAD-CA	PCAWG	CPCG0166-F1	DO51067	CPCG0166	Primary tumour - solid tissue		63	no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+4		TNM	4				
+SP112820	PRAD-CA	PCAWG	CPCG0166-B1	DO51067	CPCG0166	Normal - blood derived		63	no treatment				frozen, -70 freezer										TNM					
+SP112822	PRAD-CA	PCAWG	CPCG0182-B1	DO51068	CPCG0182	Normal - blood derived		286	no treatment				frozen, -70 freezer										TNM					
+SP112823	PRAD-CA	PCAWG	CPCG0182-F1	DO51068	CPCG0182	Primary tumour - solid tissue		286	no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	4+3		TNM	4				
+SP112824	PRAD-CA	PCAWG	CPCG0185-B1	DO51069	CPCG0185	Normal - blood derived		68	no treatment				frozen, -70 freezer										TNM					
+SP112825	PRAD-CA	PCAWG	CPCG0185-F1	DO51069	CPCG0185	Primary tumour - solid tissue		68	no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+4		TNM	4				
+SP112806	PRAD-CA	PCAWG	CPCG0121-B1	DO51060	CPCG0121	Normal - blood derived		76	no treatment				frozen, -70 freezer										TNM					
+SP112807	PRAD-CA	PCAWG	CPCG0121-F1	DO51060	CPCG0121	Primary tumour - solid tissue		76	no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+4		TNM	3				
+SP112809	PRAD-CA	PCAWG	CPCG0123-F1	DO51061	CPCG0123	Primary tumour - solid tissue		29	no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+4		TNM	4				
+SP112808	PRAD-CA	PCAWG	CPCG0123-B1	DO51061	CPCG0123	Normal - blood derived		29	no treatment				frozen, -70 freezer										TNM					
+SP112811	PRAD-CA	PCAWG	CPCG0124-F1	DO51062	CPCG0124	Primary tumour - solid tissue		27	no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	4+3		TNM	4				
+SP112810	PRAD-CA	PCAWG	CPCG0124-B1	DO51062	CPCG0124	Normal - blood derived		27	no treatment				frozen, -70 freezer										TNM					
+SP112813	PRAD-CA	PCAWG	CPCG0127-F1	DO51063	CPCG0127	Primary tumour - solid tissue		91	no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+4		TNM	4				
+SP112812	PRAD-CA	PCAWG	CPCG0127-B1	DO51063	CPCG0127	Normal - blood derived		91	no treatment				frozen, -70 freezer										TNM					
+SP112815	PRAD-CA	PCAWG	CPCG0128-F1	DO51064	CPCG0128	Primary tumour - solid tissue		2	no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+4		TNM	3				
+SP112814	PRAD-CA	PCAWG	CPCG0128-B1	DO51064	CPCG0128	Normal - blood derived		2	no treatment				frozen, -70 freezer										TNM					
+SP112794	PRAD-CA	PCAWG	CPCG0087-B1	DO51054	CPCG0087	Normal - blood derived		14	no treatment				frozen, -70 freezer										TNM					
+SP112795	PRAD-CA	PCAWG	CPCG0087-F1	DO51054	CPCG0087	Primary tumour - solid tissue		14	no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+4		TNM	3				
+SP112796	PRAD-CA	PCAWG	CPCG0094-B1	DO51055	CPCG0094	Normal - blood derived		28	no treatment				frozen, -70 freezer										TNM					
+SP112797	PRAD-CA	PCAWG	CPCG0094-F1	DO51055	CPCG0094	Primary tumour - solid tissue		28	no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	4+3		TNM	5				
+SP112799	PRAD-CA	PCAWG	CPCG0095-F1	DO51056	CPCG0095	Primary tumour - solid tissue		16	no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	4+3		TNM	4				
+SP112798	PRAD-CA	PCAWG	CPCG0095-B1	DO51056	CPCG0095	Normal - blood derived		16	no treatment				frozen, -70 freezer										TNM					
+SP112800	PRAD-CA	PCAWG	CPCG0098-B1	DO51057	CPCG0098	Normal - blood derived		105	no treatment				frozen, -70 freezer										TNM					
+SP112801	PRAD-CA	PCAWG	CPCG0098-F1	DO51057	CPCG0098	Primary tumour - solid tissue		105	no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	4+3		TNM	3				
+SP112802	PRAD-CA	PCAWG	CPCG0114-B1	DO51058	CPCG0114	Normal - blood derived		172	no treatment				frozen, -70 freezer										TNM					
+SP112803	PRAD-CA	PCAWG	CPCG0114-F1	DO51058	CPCG0114	Primary tumour - solid tissue		172	no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	4+3		TNM	5				
+SP112804	PRAD-CA	PCAWG	CPCG0117-B1	DO51059	CPCG0117	Normal - blood derived		56	no treatment				frozen, -70 freezer										TNM					
+SP112805	PRAD-CA	PCAWG	CPCG0117-F1	DO51059	CPCG0117	Primary tumour - solid tissue		56	no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+4		TNM	4				
+SP112786	PRAD-CA	PCAWG	CPCG0073-B1	DO51050	CPCG0073	Normal - blood derived		74	no treatment				frozen, -70 freezer										TNM					
+SP112787	PRAD-CA	PCAWG	CPCG0073-F1	DO51050	CPCG0073	Primary tumour - solid tissue		74	no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	4+3		TNM	3				
+SP112789	PRAD-CA	PCAWG	CPCG0078-F1	DO51051	CPCG0078	Primary tumour - solid tissue		93	no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	4+3		TNM	5				
+SP112788	PRAD-CA	PCAWG	CPCG0078-B1	DO51051	CPCG0078	Normal - blood derived		93	no treatment				frozen, -70 freezer										TNM					
+SP112791	PRAD-CA	PCAWG	CPCG0081-F1	DO51052	CPCG0081	Primary tumour - solid tissue		30	no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	4+3		TNM	4				
+SP112790	PRAD-CA	PCAWG	CPCG0081-B1	DO51052	CPCG0081	Normal - blood derived		30	no treatment				frozen, -70 freezer										TNM					
+SP112793	PRAD-CA	PCAWG	CPCG0083-F1	DO51053	CPCG0083	Primary tumour - solid tissue		151	no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+4		TNM	5				
+SP112792	PRAD-CA	PCAWG	CPCG0083-B1	DO51053	CPCG0083	Normal - blood derived		151	no treatment				frozen, -70 freezer										TNM					
+SP116381	PRAD-CA		CPCG0009-B1	DO52563	CPCG0009	Normal - blood derived		0	no treatment				frozen, -70 freezer										TNM					
+SP116382	PRAD-CA		CPCG0009-F1	DO52563	CPCG0009	Primary tumour - solid tissue		0	no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	4+3		TNM	4				
+SP112993	PRAD-CA	PCAWG	CPCG0407-F1	DO51153	CPCG0407	Primary tumour - solid tissue		267	no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+4		TNM	3				
+SP112992	PRAD-CA	PCAWG	CPCG0407-B1	DO51153	CPCG0407	Normal - blood derived		267	no treatment				frozen, -70 freezer										TNM					
+SP112994	PRAD-CA	PCAWG	CPCG0409-B1	DO51154	CPCG0409	Normal - blood derived		119	no treatment				frozen, -70 freezer										TNM					
+SP112995	PRAD-CA	PCAWG	CPCG0409-F1	DO51154	CPCG0409	Primary tumour - solid tissue		119	no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+4		TNM	3				
+SP112996	PRAD-CA	PCAWG	CPCG0410-B1	DO51155	CPCG0410	Normal - blood derived		165	no treatment				frozen, -70 freezer										TNM					
+SP112997	PRAD-CA	PCAWG	CPCG0410-F1	DO51155	CPCG0410	Primary tumour - solid tissue		165	no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+4		TNM	5				
+SP112998	PRAD-CA	PCAWG	CPCG0411-B1	DO51156	CPCG0411	Normal - blood derived		102	no treatment				frozen, -70 freezer										TNM					
+SP112999	PRAD-CA	PCAWG	CPCG0411-F1	DO51156	CPCG0411	Primary tumour - solid tissue		102	no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	4+3		TNM	3				
+SP113000	PRAD-CA	PCAWG	CPCG0412-B1	DO51157	CPCG0412	Normal - blood derived		170	no treatment				frozen, -70 freezer										TNM					
+SP113001	PRAD-CA	PCAWG	CPCG0412-F1	DO51157	CPCG0412	Primary tumour - solid tissue		170	no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	4+3		TNM	5				
+SP113002	PRAD-CA	PCAWG	CPCG0413-B1	DO51158	CPCG0413	Normal - blood derived		81	no treatment				frozen, -70 freezer										TNM					
+SP113003	PRAD-CA	PCAWG	CPCG0413-F1	DO51158	CPCG0413	Primary tumour - solid tissue		81	no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+4		TNM	4				
+SP113005	PRAD-CA	PCAWG	CPCG0414-F1	DO51159	CPCG0414	Primary tumour - solid tissue		117	no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	4+3		TNM	2				
+SP113004	PRAD-CA	PCAWG	CPCG0414-B1	DO51159	CPCG0414	Normal - blood derived		117	no treatment				frozen, -70 freezer										TNM					
+SP112987	PRAD-CA	PCAWG	CPCG0392-F1	DO51150	CPCG0392	Primary tumour - solid tissue		62	no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+4		TNM	4				
+SP112986	PRAD-CA	PCAWG	CPCG0392-B1	DO51150	CPCG0392	Normal - blood derived		62	no treatment				frozen, -70 freezer										TNM					
+SP112989	PRAD-CA	PCAWG	CPCG0401-F1	DO51151	CPCG0401	Primary tumour - solid tissue		133	no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+4		TNM	3				
+SP112988	PRAD-CA	PCAWG	CPCG0401-B1	DO51151	CPCG0401	Normal - blood derived		133	no treatment				frozen, -70 freezer										TNM					
+SP112990	PRAD-CA	PCAWG	CPCG0404-B1	DO51152	CPCG0404	Normal - blood derived		94	no treatment				frozen, -70 freezer										TNM					
+SP112991	PRAD-CA	PCAWG	CPCG0404-F1	DO51152	CPCG0404	Primary tumour - solid tissue		94	no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+4		TNM	3				
+SP112970	PRAD-CA	PCAWG	CPCG0375-B1	DO51142	CPCG0375	Normal - blood derived		102	no treatment				frozen, -70 freezer										TNM					
+SP112971	PRAD-CA	PCAWG	CPCG0375-F1	DO51142	CPCG0375	Primary tumour - solid tissue		102	no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+3		TNM	3				
+SP112972	PRAD-CA	PCAWG	CPCG0378-B1	DO51143	CPCG0378	Normal - blood derived		48	no treatment				frozen, -70 freezer										TNM					
+SP112973	PRAD-CA	PCAWG	CPCG0378-F1	DO51143	CPCG0378	Primary tumour - solid tissue		48	no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+4		TNM	4				
+SP112975	PRAD-CA	PCAWG	CPCG0379-F1	DO51144	CPCG0379	Primary tumour - solid tissue		357	no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+4		TNM	5				
+SP112974	PRAD-CA	PCAWG	CPCG0379-B1	DO51144	CPCG0379	Normal - blood derived		357	no treatment				frozen, -70 freezer										TNM					
+SP112977	PRAD-CA	PCAWG	CPCG0380-F1	DO51145	CPCG0380	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+4		TNM	3				
+SP112976	PRAD-CA	PCAWG	CPCG0380-B1	DO51145	CPCG0380	Normal - blood derived			no treatment				frozen, -70 freezer										TNM					
+SP112978	PRAD-CA	PCAWG	CPCG0381-B1	DO51146	CPCG0381	Normal - blood derived		357	no treatment				frozen, -70 freezer										TNM					
+SP112979	PRAD-CA	PCAWG	CPCG0381-F1	DO51146	CPCG0381	Primary tumour - solid tissue		357	no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+4		TNM	3				
+SP112980	PRAD-CA	PCAWG	CPCG0387-B1	DO51147	CPCG0387	Normal - blood derived		97	no treatment				frozen, -70 freezer										TNM					
+SP112981	PRAD-CA	PCAWG	CPCG0387-F1	DO51147	CPCG0387	Primary tumour - solid tissue		97	no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	4+3		TNM	5				
+SP112982	PRAD-CA	PCAWG	CPCG0388-B1	DO51148	CPCG0388	Normal - blood derived		120	no treatment				frozen, -70 freezer										TNM					
+SP112983	PRAD-CA	PCAWG	CPCG0388-F1	DO51148	CPCG0388	Primary tumour - solid tissue		120	no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+4		TNM	4				
+SP112985	PRAD-CA	PCAWG	CPCG0391-F1	DO51149	CPCG0391	Primary tumour - solid tissue		105	no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason			TNM	3				
+SP112984	PRAD-CA	PCAWG	CPCG0391-B1	DO51149	CPCG0391	Normal - blood derived		105	no treatment				frozen, -70 freezer										TNM					
+SP112967	PRAD-CA	PCAWG	CPCG0373-F1	DO51140	CPCG0373	Primary tumour - solid tissue		104	no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+4		TNM	3				
+SP112966	PRAD-CA	PCAWG	CPCG0373-B1	DO51140	CPCG0373	Normal - blood derived		104	no treatment				frozen, -70 freezer										TNM					
+SP112969	PRAD-CA	PCAWG	CPCG0374-F1	DO51141	CPCG0374	Primary tumour - solid tissue		55	no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+3		TNM	3				
+SP112968	PRAD-CA	PCAWG	CPCG0374-B1	DO51141	CPCG0374	Normal - blood derived		55	no treatment				frozen, -70 freezer										TNM					
+SP112965	PRAD-CA	PCAWG	CPCG0372-F1	DO51139	CPCG0372	Primary tumour - solid tissue		85	no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+4		TNM	3				
+SP112964	PRAD-CA	PCAWG	CPCG0372-B1	DO51139	CPCG0372	Normal - blood derived		85	no treatment				frozen, -70 freezer										TNM					
+SP112948	PRAD-CA	PCAWG	CPCG0362-B1	DO51131	CPCG0362	Normal - blood derived		123	no treatment				frozen, -70 freezer										TNM					
+SP112949	PRAD-CA	PCAWG	CPCG0362-F1	DO51131	CPCG0362	Primary tumour - solid tissue		123	no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+4		TNM	4				
+SP112951	PRAD-CA	PCAWG	CPCG0363-F1	DO51132	CPCG0363	Primary tumour - solid tissue		74	no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+4		TNM	3				
+SP112950	PRAD-CA	PCAWG	CPCG0363-B1	DO51132	CPCG0363	Normal - blood derived		74	no treatment				frozen, -70 freezer										TNM					
+SP112953	PRAD-CA	PCAWG	CPCG0364-F1	DO51133	CPCG0364	Primary tumour - solid tissue		329	no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+3		TNM	5				
+SP112952	PRAD-CA	PCAWG	CPCG0364-B1	DO51133	CPCG0364	Normal - blood derived		329	no treatment				frozen, -70 freezer										TNM					
+SP195845	PRAD-CA		CPCG0364-F3	DO51133	CPCG0364	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+4		TNM	5				
+SP195841	PRAD-CA		CPCG0364-F4	DO51133	CPCG0364	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+4		TNM	5				
+SP195843	PRAD-CA		CPCG0364-F2	DO51133	CPCG0364	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+4		TNM	5				
+SP112954	PRAD-CA	PCAWG	CPCG0365-B1	DO51134	CPCG0365	Normal - blood derived		141	no treatment				frozen, -70 freezer										TNM					
+SP112955	PRAD-CA	PCAWG	CPCG0365-F1	DO51134	CPCG0365	Primary tumour - solid tissue		141	no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+3		TNM	3				
+SP112956	PRAD-CA	PCAWG	CPCG0366-B1	DO51135	CPCG0366	Normal - blood derived		111	no treatment				frozen, -70 freezer										TNM					
+SP112957	PRAD-CA	PCAWG	CPCG0366-F1	DO51135	CPCG0366	Primary tumour - solid tissue		111	no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+4		TNM	6				
+SP112958	PRAD-CA	PCAWG	CPCG0368-B1	DO51136	CPCG0368	Normal - blood derived		116	no treatment				frozen, -70 freezer										TNM					
+SP112959	PRAD-CA	PCAWG	CPCG0368-F1	DO51136	CPCG0368	Primary tumour - solid tissue		116	no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+3		TNM	3				
+SP112961	PRAD-CA	PCAWG	CPCG0369-F1	DO51137	CPCG0369	Primary tumour - solid tissue		148	no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+4		TNM	3				
+SP112960	PRAD-CA	PCAWG	CPCG0369-B1	DO51137	CPCG0369	Normal - blood derived		148	no treatment				frozen, -70 freezer										TNM					
+SP112963	PRAD-CA	PCAWG	CPCG0371-F1	DO51138	CPCG0371	Primary tumour - solid tissue		189	no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+4		TNM	4				
+SP112962	PRAD-CA	PCAWG	CPCG0371-B1	DO51138	CPCG0371	Normal - blood derived		189	no treatment				frozen, -70 freezer										TNM					
+SP112946	PRAD-CA	PCAWG	CPCG0361-B1	DO51130	CPCG0361	Normal - blood derived		50	no treatment				frozen, -70 freezer										TNM					
+SP112947	PRAD-CA	PCAWG	CPCG0361-F1	DO51130	CPCG0361	Primary tumour - solid tissue		50	no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+4		TNM	4				
+SP195959	PRAD-CA		CPCG0361-F3	DO51130	CPCG0361	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason			TNM	4				
+SP195955	PRAD-CA		CPCG0361-F2	DO51130	CPCG0361	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason			TNM	4				
+SP195964	PRAD-CA		CPCG0361-F4	DO51130	CPCG0361	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason			TNM	4				
+SP112943	PRAD-CA	PCAWG	CPCG0358-F1	DO51128	CPCG0358	Primary tumour - solid tissue		841	no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+4		TNM	3				
+SP112942	PRAD-CA	PCAWG	CPCG0358-B1	DO51128	CPCG0358	Normal - blood derived		841	no treatment				frozen, -70 freezer										TNM					
+SP112945	PRAD-CA	PCAWG	CPCG0360-F1	DO51129	CPCG0360	Primary tumour - solid tissue		92	no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+4		TNM	5				
+SP112944	PRAD-CA	PCAWG	CPCG0360-B1	DO51129	CPCG0360	Normal - blood derived		92	no treatment				frozen, -70 freezer										TNM					
+SP112927	PRAD-CA	PCAWG	CPCG0348-F1	DO51120	CPCG0348	Primary tumour - solid tissue		90	no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+4		TNM	3				
+SP112926	PRAD-CA	PCAWG	CPCG0348-B1	DO51120	CPCG0348	Normal - blood derived		90	no treatment				frozen, -70 freezer										TNM					
+SP112929	PRAD-CA	PCAWG	CPCG0350-F1	DO51121	CPCG0350	Primary tumour - solid tissue		118	no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	4+3		TNM	3				
+SP112928	PRAD-CA	PCAWG	CPCG0350-B1	DO51121	CPCG0350	Normal - blood derived		118	no treatment				frozen, -70 freezer										TNM					
+SP112931	PRAD-CA	PCAWG	CPCG0352-F1	DO51122	CPCG0352	Primary tumour - solid tissue		43	no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	4+3		TNM	3				
+SP112930	PRAD-CA	PCAWG	CPCG0352-B1	DO51122	CPCG0352	Normal - blood derived		43	no treatment				frozen, -70 freezer										TNM					
+SP112932	PRAD-CA	PCAWG	CPCG0353-B1	DO51123	CPCG0353	Normal - blood derived		141	no treatment				frozen, -70 freezer										TNM					
+SP112933	PRAD-CA	PCAWG	CPCG0353-F1	DO51123	CPCG0353	Primary tumour - solid tissue		141	no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+4		TNM	3				
+SP112935	PRAD-CA	PCAWG	CPCG0354-F1	DO51124	CPCG0354	Primary tumour - solid tissue		152	no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+4		TNM	3				
+SP112934	PRAD-CA	PCAWG	CPCG0354-B1	DO51124	CPCG0354	Normal - blood derived		152	no treatment				frozen, -70 freezer										TNM					
+SP112936	PRAD-CA	PCAWG	CPCG0355-B1	DO51125	CPCG0355	Normal - blood derived		132	no treatment				frozen, -70 freezer										TNM					
+SP112937	PRAD-CA	PCAWG	CPCG0355-F1	DO51125	CPCG0355	Primary tumour - solid tissue		132	no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+3		TNM	3				
+SP112939	PRAD-CA	PCAWG	CPCG0356-F1	DO51126	CPCG0356	Primary tumour - solid tissue		174	no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	4+3		TNM	5				
+SP112938	PRAD-CA	PCAWG	CPCG0356-B1	DO51126	CPCG0356	Normal - blood derived		174	no treatment				frozen, -70 freezer										TNM					
+SP112940	PRAD-CA	PCAWG	CPCG0357-B1	DO51127	CPCG0357	Normal - blood derived		124	no treatment				frozen, -70 freezer										TNM					
+SP112941	PRAD-CA	PCAWG	CPCG0357-F1	DO51127	CPCG0357	Primary tumour - solid tissue		124	no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+4		TNM	5				
+SP112921	PRAD-CA	PCAWG	CPCG0344-F1	DO51117	CPCG0344	Primary tumour - solid tissue		96	no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+3		TNM	3				
+SP112920	PRAD-CA	PCAWG	CPCG0344-B1	DO51117	CPCG0344	Normal - blood derived		96	no treatment				frozen, -70 freezer										TNM					
+SP112923	PRAD-CA	PCAWG	CPCG0345-F1	DO51118	CPCG0345	Primary tumour - solid tissue		92	no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+4		TNM	4				
+SP112922	PRAD-CA	PCAWG	CPCG0345-B1	DO51118	CPCG0345	Normal - blood derived		92	no treatment				frozen, -70 freezer										TNM					
+SP112925	PRAD-CA	PCAWG	CPCG0346-F1	DO51119	CPCG0346	Primary tumour - solid tissue		111	no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+4		TNM	3				
+SP112924	PRAD-CA	PCAWG	CPCG0346-B1	DO51119	CPCG0346	Normal - blood derived		111	no treatment				frozen, -70 freezer										TNM					
+SP112906	PRAD-CA	PCAWG	CPCG0331-B1	DO51110	CPCG0331	Normal - blood derived		48	no treatment				frozen, -70 freezer										TNM					
+SP112907	PRAD-CA	PCAWG	CPCG0331-F1	DO51110	CPCG0331	Primary tumour - solid tissue		48	no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+4		TNM	4				
+SP112909	PRAD-CA	PCAWG	CPCG0334-F1	DO51111	CPCG0334	Primary tumour - solid tissue		118	no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+4		TNM	4				
+SP112908	PRAD-CA	PCAWG	CPCG0334-B1	DO51111	CPCG0334	Normal - blood derived		118	no treatment				frozen, -70 freezer										TNM					
+SP196132	PRAD-CA		CPCG0334-F3	DO51111	CPCG0334	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+4		TNM	4				
+SP196130	PRAD-CA		CPCG0334-F2	DO51111	CPCG0334	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+4		TNM	4				
+SP112911	PRAD-CA	PCAWG	CPCG0336-F1	DO51112	CPCG0336	Primary tumour - solid tissue		86	no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+3		TNM	3				
+SP112910	PRAD-CA	PCAWG	CPCG0336-B1	DO51112	CPCG0336	Normal - blood derived		86	no treatment				frozen, -70 freezer										TNM					
+SP112913	PRAD-CA	PCAWG	CPCG0339-F1	DO51113	CPCG0339	Primary tumour - solid tissue		119	no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+4		TNM	3				
+SP112912	PRAD-CA	PCAWG	CPCG0339-B1	DO51113	CPCG0339	Normal - blood derived		119	no treatment				frozen, -70 freezer										TNM					
+SP112914	PRAD-CA	PCAWG	CPCG0340-B1	DO51114	CPCG0340	Normal - blood derived		112	no treatment				frozen, -70 freezer										TNM					
+SP112915	PRAD-CA	PCAWG	CPCG0340-F1	DO51114	CPCG0340	Primary tumour - solid tissue		112	no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+4		TNM	3				
+SP112917	PRAD-CA	PCAWG	CPCG0341-F1	DO51115	CPCG0341	Primary tumour - solid tissue		157	no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	4+3		TNM	3				
+SP112916	PRAD-CA	PCAWG	CPCG0341-B1	DO51115	CPCG0341	Normal - blood derived		157	no treatment				frozen, -70 freezer										TNM					
+SP112919	PRAD-CA	PCAWG	CPCG0342-F1	DO51116	CPCG0342	Primary tumour - solid tissue		45	no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	4+3		TNM	4				
+SP112918	PRAD-CA	PCAWG	CPCG0342-B1	DO51116	CPCG0342	Normal - blood derived		45	no treatment				frozen, -70 freezer										TNM					
+SP112898	PRAD-CA	PCAWG	CPCG0267-B1	DO51106	CPCG0267	Normal - blood derived		105	no treatment				frozen, -70 freezer										TNM					
+SP112899	PRAD-CA	PCAWG	CPCG0267-F1	DO51106	CPCG0267	Primary tumour - solid tissue		105	no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+4		TNM	4				
+SP112901	PRAD-CA	PCAWG	CPCG0268-F1	DO51107	CPCG0268	Primary tumour - solid tissue		65	no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+3		TNM	5				
+SP112900	PRAD-CA	PCAWG	CPCG0268-B1	DO51107	CPCG0268	Normal - blood derived		65	no treatment				frozen, -70 freezer										TNM					
+SP112903	PRAD-CA	PCAWG	CPCG0269-F1	DO51108	CPCG0269	Primary tumour - solid tissue		176	no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+3		TNM	3				
+SP112902	PRAD-CA	PCAWG	CPCG0269-B1	DO51108	CPCG0269	Normal - blood derived		176	no treatment				frozen, -70 freezer										TNM					
+SP112904	PRAD-CA	PCAWG	CPCG0324-B1	DO51109	CPCG0324	Normal - blood derived		69	no treatment				frozen, -70 freezer										TNM					
+SP112905	PRAD-CA	PCAWG	CPCG0324-F1	DO51109	CPCG0324	Primary tumour - solid tissue		69	no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+4		TNM	4				
+SP112886	PRAD-CA	PCAWG	CPCG0259-B1	DO51100	CPCG0259	Normal - blood derived		177	no treatment				frozen, -70 freezer										TNM					
+SP112887	PRAD-CA	PCAWG	CPCG0259-F1	DO51100	CPCG0259	Primary tumour - solid tissue		177	no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+3		TNM	3				
+SP112889	PRAD-CA	PCAWG	CPCG0260-F1	DO51101	CPCG0260	Primary tumour - solid tissue		93	no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	4+3		TNM	4				
+SP195916	PRAD-CA		CPCG0260-F3	DO51101	CPCG0260	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason			TNM	4				
+SP112888	PRAD-CA	PCAWG	CPCG0260-B1	DO51101	CPCG0260	Normal - blood derived		93	no treatment				frozen, -70 freezer										TNM					
+SP195914	PRAD-CA		CPCG0260-F4	DO51101	CPCG0260	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason			TNM	4				
+SP195918	PRAD-CA		CPCG0260-F2	DO51101	CPCG0260	Primary tumour - solid tissue			no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason			TNM	4				
+SP112891	PRAD-CA	PCAWG	CPCG0262-F1	DO51102	CPCG0262	Primary tumour - solid tissue		115	no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+4		TNM	4				
+SP112890	PRAD-CA	PCAWG	CPCG0262-B1	DO51102	CPCG0262	Normal - blood derived		115	no treatment				frozen, -70 freezer										TNM					
+SP112892	PRAD-CA	PCAWG	CPCG0263-B1	DO51103	CPCG0263	Normal - blood derived		148	no treatment				frozen, -70 freezer										TNM					
+SP112893	PRAD-CA	PCAWG	CPCG0263-F1	DO51103	CPCG0263	Primary tumour - solid tissue		148	no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+3		TNM	4				
+SP112894	PRAD-CA	PCAWG	CPCG0265-B1	DO51104	CPCG0265	Normal - blood derived		118	no treatment				frozen, -70 freezer										TNM					
+SP112895	PRAD-CA	PCAWG	CPCG0265-F1	DO51104	CPCG0265	Primary tumour - solid tissue		118	no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+3		TNM	3				
+SP112896	PRAD-CA	PCAWG	CPCG0266-B1	DO51105	CPCG0266	Normal - blood derived		79	no treatment				frozen, -70 freezer										TNM					
+SP112897	PRAD-CA	PCAWG	CPCG0266-F1	DO51105	CPCG0266	Primary tumour - solid tissue		79	no treatment				frozen, -70 freezer		yes				Adenocarcinoma	Gleason	3+4		TNM	4				

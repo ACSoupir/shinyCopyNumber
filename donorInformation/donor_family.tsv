@@ -1,0 +1,190 @@
+icgc_donor_id	project_code	submitted_donor_id	donor_has_relative_with_cancer_history	relationship_type	relationship_type_other	relationship_sex	relationship_age	relationship_disease_icd10	relationship_disease
+DO51964	PRAD-UK	A21-0096_CRUK_PC_0096	yes	other	First degree	female		C50	Breast Cancer
+DO51965	PRAD-UK	A17-0095_CRUK_PC_0095	yes	other	First degree	female		C50	Breast Cancer
+DO51960	PRAD-UK	A24-0021_CRUK_PC_0021	yes	other	First degree	unknown			Not Breast or Prostate
+DO51962	PRAD-UK	A34-0022_CRUK_PC_0022	yes	other	Second degree	unknown			Not Breast or Prostate
+DO51954	PRAD-UK	A22-0016_CRUK_PC_0016	yes	other	First degree	female		C50	Breast Cancer
+DO51955	PRAD-UK	A29-0017_CRUK_PC_0017	yes	other	First degree	male		C61	Prostate Cancer
+DO51956	PRAD-UK	A31-0018_CRUK_PC_0018	yes	other	First degree	unknown			Not Breast or Prostate
+DO51958	PRAD-UK	A32-0019_CRUK_PC_0019	yes	other	Second degree	female		C50	Breast Cancer
+DO51958	PRAD-UK	A32-0019_CRUK_PC_0019	yes	other	First degree	unknown			Not Breast or Prostate
+DO51959	PRAD-UK	A12-0020_CRUK_PC_0020	no						
+DO36223	PRAD-UK	0008_CRUK_PC_0008	yes	cousin		unknown	50	C50	breast
+DO36223	PRAD-UK	0008_CRUK_PC_0008	yes	uncle/aunt		female		C50	Breast
+DO36221	PRAD-UK	0007_CRUK_PC_0007	unknown						
+DO48577	PRAD-UK	0006_CRUK_PC_0006	yes	parent		female	45	C50	Breast cancer
+DO50430	PRAD-UK	0082_CRUK_PC_0082	yes	parent		female		C18	Bowel cancer
+DO50431	PRAD-UK	0091_CRUK_PC_0091	unknown						
+DO50432	PRAD-UK	0090_CRUK_PC_0090	yes	parent		male		C61	Prostate cancer
+DO50424	PRAD-UK	0070_CRUK_PC_0070	yes	parent		female	70	Oesophageal Cancer	Oesophageal Cancer
+DO50425	PRAD-UK	0093_CRUK_PC_0093	unknown						
+DO50426	PRAD-UK	0094_CRUK_PC_0094	yes	parent		male		C16	Stomach cancer
+DO50426	PRAD-UK	0094_CRUK_PC_0094	yes	grandparent		female		C18	Bowel cancer
+DO50427	PRAD-UK	0084_CRUK_PC_0084	unknown						
+DO50428	PRAD-UK	0089_CRUK_PC_0089	yes	sibling		male		C16	Stomach cancer
+DO50420	PRAD-UK	0071_CRUK_PC_0071	yes	parent		male	82	C18	colon
+DO50421	PRAD-UK	0067_CRUK_PC_0067	unknown						
+DO50422	PRAD-UK	0065_CRUK_PC_0065	no						
+DO50423	PRAD-UK	0069_CRUK_PC_0069	yes	parent		male	80	C61	Prostate Cancer
+DO50423	PRAD-UK	0069_CRUK_PC_0069	yes	sibling		female		Lung Cancer	Lung Cancer
+DO50414	PRAD-UK	0080_CRUK_PC_0080	yes	parent		male	69	C61	prostate
+DO50415	PRAD-UK	0072_CRUK_PC_0072	unknown						
+DO50416	PRAD-UK	0064_CRUK_PC_0064	unknown						
+DO50417	PRAD-UK	0075_CRUK_PC_0075	unknown						
+DO50418	PRAD-UK	0077_CRUK_PC_0077	yes	other	niece	female	28	C18	colon
+DO50418	PRAD-UK	0077_CRUK_PC_0077	yes	grandparent		male	72	C61	prostate
+DO50418	PRAD-UK	0077_CRUK_PC_0077	yes	parent		male	41	C18	colon
+DO50419	PRAD-UK	0078_CRUK_PC_0078	yes	parent		male	69	Lung Cancer	Lung Cancer
+DO50419	PRAD-UK	0078_CRUK_PC_0078	yes	parent		female	51	Lung Cancer	Lung Cancer
+DO46793	PRAD-CA	CPCG0102	unknown	unknown					
+DO46796	PRAD-CA	CPCG0184	unknown	unknown					
+DO46790	PRAD-CA	CPCG0020	unknown	unknown					
+DO46792	PRAD-CA	CPCG0099	unknown	unknown					
+DO46787	PRAD-CA	CPCG0001	unknown	unknown					
+DO46788	PRAD-CA	CPCG0003	unknown	unknown					
+DO10819	EOPC-DE	EOPC-08	unknown						
+DO10817	EOPC-DE	EOPC-07	unknown						
+DO10815	EOPC-DE	EOPC-06	unknown						
+DO10813	EOPC-DE	EOPC-05	unknown						
+DO10811	EOPC-DE	EOPC-04	unknown						
+DO10809	EOPC-DE	EOPC-03	unknown						
+DO10807	EOPC-DE	EOPC-02	unknown						
+DO10806	EOPC-DE	EOPC-01	unknown						
+DO10837	EOPC-DE	EOPC-026	unknown						
+DO10835	EOPC-DE	EOPC-024	unknown						
+DO10833	EOPC-DE	EOPC-022	unknown						
+DO10831	EOPC-DE	EOPC-021	unknown						
+DO10829	EOPC-DE	EOPC-018	unknown						
+DO10825	EOPC-DE	EOPC-011	unknown						
+DO10823	EOPC-DE	EOPC-010	unknown						
+DO10821	EOPC-DE	EOPC-09	unknown						
+DO51046	PRAD-CA	CPCG0047	unknown	unknown					
+DO51047	PRAD-CA	CPCG0048	unknown	unknown					
+DO51048	PRAD-CA	CPCG0057	unknown	unknown					
+DO51049	PRAD-CA	CPCG0063	unknown	unknown					
+DO51098	PRAD-CA	CPCG0256	unknown	unknown					
+DO51099	PRAD-CA	CPCG0258	unknown	unknown					
+DO51090	PRAD-CA	CPCG0241	unknown	unknown					
+DO51091	PRAD-CA	CPCG0242	unknown	unknown					
+DO51092	PRAD-CA	CPCG0246	unknown	unknown					
+DO51093	PRAD-CA	CPCG0248	unknown	unknown					
+DO51094	PRAD-CA	CPCG0249	unknown	unknown					
+DO51095	PRAD-CA	CPCG0250	unknown	unknown					
+DO51096	PRAD-CA	CPCG0251	unknown	unknown					
+DO51097	PRAD-CA	CPCG0255	unknown	unknown					
+DO51087	PRAD-CA	CPCG0234	unknown	unknown					
+DO51088	PRAD-CA	CPCG0236	unknown	unknown					
+DO51089	PRAD-CA	CPCG0238	unknown	unknown					
+DO51080	PRAD-CA	CPCG0210	unknown	unknown					
+DO51081	PRAD-CA	CPCG0211	unknown	unknown					
+DO51083	PRAD-CA	CPCG0213	unknown	unknown					
+DO51084	PRAD-CA	CPCG0217	unknown	unknown					
+DO51085	PRAD-CA	CPCG0232	unknown	unknown					
+DO51086	PRAD-CA	CPCG0233	unknown	unknown					
+DO51078	PRAD-CA	CPCG0206	unknown	unknown					
+DO51079	PRAD-CA	CPCG0208	unknown	unknown					
+DO51070	PRAD-CA	CPCG0189	unknown	unknown					
+DO51071	PRAD-CA	CPCG0190	unknown	unknown					
+DO51072	PRAD-CA	CPCG0191	unknown	unknown					
+DO51073	PRAD-CA	CPCG0196	unknown	unknown					
+DO51074	PRAD-CA	CPCG0199	unknown	unknown					
+DO51075	PRAD-CA	CPCG0201	unknown	unknown					
+DO51065	PRAD-CA	CPCG0154	unknown	unknown					
+DO51066	PRAD-CA	CPCG0158	unknown	unknown					
+DO51067	PRAD-CA	CPCG0166	unknown	unknown					
+DO51068	PRAD-CA	CPCG0182	unknown	unknown					
+DO51069	PRAD-CA	CPCG0185	unknown	unknown					
+DO51060	PRAD-CA	CPCG0121	unknown	unknown					
+DO51061	PRAD-CA	CPCG0123	unknown	unknown					
+DO51062	PRAD-CA	CPCG0124	unknown	unknown					
+DO51063	PRAD-CA	CPCG0127	unknown	unknown					
+DO51064	PRAD-CA	CPCG0128	unknown	unknown					
+DO51054	PRAD-CA	CPCG0087	unknown	unknown					
+DO51055	PRAD-CA	CPCG0094	unknown	unknown					
+DO51056	PRAD-CA	CPCG0095	unknown	unknown					
+DO51057	PRAD-CA	CPCG0098	unknown	unknown					
+DO51050	PRAD-CA	CPCG0073	unknown	unknown					
+DO51051	PRAD-CA	CPCG0078	unknown	unknown					
+DO51052	PRAD-CA	CPCG0081	unknown	unknown					
+DO51053	PRAD-CA	CPCG0083	unknown	unknown					
+DO52530	EOPC-DE	EOPC-056	unknown						
+DO52532	EOPC-DE	EOPC-057	unknown						
+DO52534	EOPC-DE	EOPC-058	unknown						
+DO52526	EOPC-DE	EOPC-053	unknown						
+DO52528	EOPC-DE	EOPC-054	unknown						
+DO52520	EOPC-DE	EOPC-049	unknown						
+DO52522	EOPC-DE	EOPC-051	unknown						
+DO52524	EOPC-DE	EOPC-052	unknown						
+DO52514	EOPC-DE	EOPC-040	yes	sibling		male	52	61	0
+DO52516	EOPC-DE	EOPC-041	unknown						
+DO52510	EOPC-DE	EOPC-035	unknown						
+DO52511	EOPC-DE	EOPC-036	unknown						
+DO52512	EOPC-DE	EOPC-037	unknown						
+DO52513	EOPC-DE	EOPC-038	unknown						
+DO52503	EOPC-DE	EOPC-028	unknown						
+DO52504	EOPC-DE	EOPC-029	unknown						
+DO52505	EOPC-DE	EOPC-030	unknown						
+DO52506	EOPC-DE	EOPC-031	unknown						
+DO52508	EOPC-DE	EOPC-033	unknown						
+DO52509	EOPC-DE	EOPC-034	unknown						
+DO52500	EOPC-DE	EOPC-023	unknown						
+DO52501	EOPC-DE	EOPC-025	unknown						
+DO52502	EOPC-DE	EOPC-027	unknown						
+DO52498	EOPC-DE	EOPC-017	unknown						
+DO52499	EOPC-DE	EOPC-019	unknown						
+DO51153	PRAD-CA	CPCG0407	unknown	unknown					
+DO51154	PRAD-CA	CPCG0409	unknown	unknown					
+DO51155	PRAD-CA	CPCG0410	unknown	unknown					
+DO51156	PRAD-CA	CPCG0411	unknown	unknown					
+DO51157	PRAD-CA	CPCG0412	unknown	unknown					
+DO51158	PRAD-CA	CPCG0413	unknown	unknown					
+DO51159	PRAD-CA	CPCG0414	unknown	unknown					
+DO51150	PRAD-CA	CPCG0392	unknown	unknown					
+DO51152	PRAD-CA	CPCG0404	unknown	unknown					
+DO51143	PRAD-CA	CPCG0378	unknown	unknown					
+DO51144	PRAD-CA	CPCG0379	unknown	unknown					
+DO51145	PRAD-CA	CPCG0380	unknown	unknown					
+DO51147	PRAD-CA	CPCG0387	unknown	unknown					
+DO51148	PRAD-CA	CPCG0388	unknown	unknown					
+DO51149	PRAD-CA	CPCG0391	unknown	unknown					
+DO51140	PRAD-CA	CPCG0373	unknown	unknown					
+DO51141	PRAD-CA	CPCG0374	unknown	unknown					
+DO51139	PRAD-CA	CPCG0372	unknown	unknown					
+DO51131	PRAD-CA	CPCG0362	unknown	unknown					
+DO51132	PRAD-CA	CPCG0363	unknown	unknown					
+DO51133	PRAD-CA	CPCG0364	unknown	unknown					
+DO51134	PRAD-CA	CPCG0365	unknown	unknown					
+DO51136	PRAD-CA	CPCG0368	unknown	unknown					
+DO51137	PRAD-CA	CPCG0369	unknown	unknown					
+DO51138	PRAD-CA	CPCG0371	unknown	unknown					
+DO51130	PRAD-CA	CPCG0361	unknown	unknown					
+DO51128	PRAD-CA	CPCG0358	unknown	unknown					
+DO51129	PRAD-CA	CPCG0360	unknown	unknown					
+DO51120	PRAD-CA	CPCG0348	unknown	unknown					
+DO51121	PRAD-CA	CPCG0350	unknown	unknown					
+DO51122	PRAD-CA	CPCG0352	unknown	unknown					
+DO51123	PRAD-CA	CPCG0353	unknown	unknown					
+DO51124	PRAD-CA	CPCG0354	unknown	unknown					
+DO51125	PRAD-CA	CPCG0355	unknown	unknown					
+DO51126	PRAD-CA	CPCG0356	unknown	unknown					
+DO51127	PRAD-CA	CPCG0357	unknown	unknown					
+DO51117	PRAD-CA	CPCG0344	unknown	unknown					
+DO51118	PRAD-CA	CPCG0345	unknown	unknown					
+DO51119	PRAD-CA	CPCG0346	unknown	unknown					
+DO51110	PRAD-CA	CPCG0331	unknown	unknown					
+DO51111	PRAD-CA	CPCG0334	unknown	unknown					
+DO51112	PRAD-CA	CPCG0336	unknown	unknown					
+DO51113	PRAD-CA	CPCG0339	unknown	unknown					
+DO221503	PRAD-UK	0056_CRUK_PC_0056	unknown						
+DO51114	PRAD-CA	CPCG0340	unknown	unknown					
+DO221504	PRAD-UK	0086_CRUK_PC_0086	unknown						
+DO51115	PRAD-CA	CPCG0341	unknown	unknown					
+DO51116	PRAD-CA	CPCG0342	unknown	unknown					
+DO51106	PRAD-CA	CPCG0267	unknown	unknown					
+DO51107	PRAD-CA	CPCG0268	unknown	unknown					
+DO51108	PRAD-CA	CPCG0269	unknown	unknown					
+DO51109	PRAD-CA	CPCG0324	unknown	unknown					
+DO51100	PRAD-CA	CPCG0259	unknown	unknown					
+DO51102	PRAD-CA	CPCG0262	unknown	unknown					
+DO51103	PRAD-CA	CPCG0263	unknown	unknown					
+DO51105	PRAD-CA	CPCG0266	unknown	unknown					
