@@ -6,7 +6,7 @@
 #
 #    http://shiny.rstudio.com/
 #
-
+rm(list=ls())
 library(shiny)
 library(DT)
 library(stringr)
