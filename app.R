@@ -156,8 +156,8 @@ server <- function(input, output) {
         gccontent = read.csv(gzfile(paste("gccontent/",genome,".gc",window,".wig.gz",sep="")),header=FALSE)
         mappability = read.csv(gzfile(paste("mappability/",genome,".map",window,".wig.gz",sep="")),header=FALSE)
         for(i in 1:ncol(sample_wig)){
-            uncorrected = wigsToRangedData2(sample_wig[,i], gccontent, mappability)
-            
+            uncorrected_reads = wigsToRangedData2(sample_wig[,i], gccontent[,1], mappability[,1])
+            corrected_copy = correctReadcount(uncorrected_reads)
             
             progress$inc(1/length(input$samplewig[,1]), detail=paste("Calculating Copy Number for ", colnames(sample_wig)[i]))
         }
@@ -227,7 +227,7 @@ wigToRangedData2 = function (wigfile, verbose = TRUE){
     if (verbose) {
         message(paste("Slurping:", wigfile))
     }
-    input <- as.vector(wigfile[,1])
+    input <- wigfile
     breaks <- c(grep("fixedStep", input), length(input) + 
                     1)
     temp <- NULL
@@ -263,7 +263,7 @@ wigToArray2 = function (wigfile, verbose = TRUE){
     if (verbose) {
         message(paste("Slurping:", wigfile))
     }
-    input <- as.vector(wigfile[,1])
+    input <- wigfile
     breaks <- c(grep("fixedStep", input), length(input) + 
                     1)
     temp <- NULL
@@ -289,16 +289,16 @@ wigToArray2 = function (wigfile, verbose = TRUE){
 }
 
 wigsToRangedData2 = function (readfile, gcfile, mapfile, verbose = FALSE){
-    output <- wigToRangedData(readfile, verbose)
+    output <- wigToRangedData2(readfile, verbose)
     colnames(output)[4] <- c("reads")
     output$reads <- as.integer(output$reads)
-    gc <- wigToArray(gcfile, verbose)
+    gc <- wigToArray2(gcfile, verbose)
     if (nrow(output) != length(gc)) {
         stop(paste("Number of readcount bins (", nrow(output), 
                    ") differs from GC count bins (", length(gc), 
                    ")", sep = ""))
     }
-    map = wigToArray(mapfile, verbose)
+    map = wigToArray2(mapfile, verbose)
     if (nrow(output) != length(map)) {
         stop(paste("Number of readcount bins (", nrow(output), 
                    ") differs from mappability bins (", length(map), 
