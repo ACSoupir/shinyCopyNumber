@@ -1,5 +1,5 @@
 # shinyCopyNumber!
-Deployed on ([ShinyApps.io](https://acsoupir.shinyapps.io/copynumbershiny/)) 
+Deployed on [ShinyApps.io](https://acsoupir.shinyapps.io/copynumbershiny/)!
 
 **shinyCopyNumber** is a way to perform copy number calculations for sample wig files that were aligned to a genome and then counted using readCounter from [HMMcopy](https://github.com/shahcompbio/HMMcopy). Currently, there are 3 genome versions (GRCh37, hg19, and b37) that work if you aligned to those, and for 4 window sizes (1MB, 100Kb, 10Kb, 1Kb). All that is needed is to input the `wig` file from readCounter.
 
