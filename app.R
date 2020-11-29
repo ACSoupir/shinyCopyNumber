@@ -10,6 +10,7 @@
 library(shiny)
 library(DT)
 library(stringr)
+library(HMMcopy)
 rm(list=ls())
 #max file upload size set to 30MB
 options(shiny.maxRequestSize = 30*1024^2)
@@ -27,26 +28,29 @@ ui <- navbarPage("Shiny Copy Numbers!",
                                       c(".wig"))),
                  
                  selectInput("window", "readCounter Window",
-                             choices = c("1,000 bp" = 1000,
-                                         "10,000 bp" = 10000,
-                                         "100,000 bp" = 100000,
-                                         "1,000,000 bp" = 1000000),
-                             selected = 1000000),
+                             choices = c("1,000 bp" = "1000",
+                                         "10,000 bp" = "10000",
+                                         "100,000 bp" = "100000",
+                                         "1,000,000 bp" = "1000000"),
+                             selected = "1000000"),
                  tags$hr(),
                  
                  selectInput("genome", "Genome Version",
                               choices = c(None = NULL,
-                                          "hg19" = "hg19",
-                                          "GRCh37" = "GRCh37",
-                                          "b37 (decoy)" = "b37"),
-                              selected = "b37"),
+                                          "hg19" = "GCF_000001405.25_GRCh37.p13_genomic.fna",
+                                          "GRCh37" = "hg19.fa",
+                                          "b37 (decoy)" = "Homo_sapiens_assembly19.fasta"),
+                              selected = "Homo_sapiens_assembly19.fasta"),
                  tags$hr(),
+                 
+                 actionButton("copyNumberCalculate", "Calculate Copy Number"),
                  
                  width = 3
              ),
              
              mainPanel(type="tabs",
-                       tabPanel("Upload readCounter Output", DT::dataTableOutput("inputwig"))
+                       tabPanel("Upload readCounter Output", DT::dataTableOutput("inputwig")),
+                       tabPanel("Upload readCounter Output", DT::dataTableOutput("copyNumberTable"))
              )
     ),
     
@@ -102,6 +106,8 @@ ui <- navbarPage("Shiny Copy Numbers!",
 # Define server logic required to draw a histogram
 server <- function(input, output) {
     
+    buttons <- reactiveValues(data = NULL)
+    
     output$inputwig = DT::renderDataTable({
         req(input$samplewig)
         
@@ -129,9 +135,34 @@ server <- function(input, output) {
                                header = )
         }
         
-        #assign('sample_wig', datawig, envir=.GlobalEnv)
+        assign('sample_wig', datawig, envir=.GlobalEnv)
         DT::datatable(datawig, width = 800)
         
+    })
+    
+    observeEvent(input$copyNumberCalculate, {
+        buttons$data = 1
+    })
+    
+    output$copyNumberTable = DT::renderDataTable({
+        req(input$samplewig)
+        if(is.null(buttons$data)) return()
+        
+        progress = shiny::Progress$new()
+        on.exit(progress$close())
+        
+        progress$set(message = "calculating copy number")
+        
+        gccontent = read.csv(gzfile(paste("gccontent/",genome,".gc",window,".wig.gz",sep="")),header=FALSE)
+        mappability = read.csv(gzfile(paste("mappability/",genome,".map",window,".wig.gz",sep="")),header=FALSE)
+        for(i in 1:ncol(sample_wig)){
+            uncorrected = wigsToRangedData2(sample_wig[,i], gccontent, mappability)
+            
+            
+            progress$inc(1/length(input$samplewig[,1]), detail=paste("Calculating Copy Number for ", colnames(sample_wig)[i]))
+        }
+        
+        DT::datatable(sample_wig, width = 800)
     })
 
     output$rawTable1 = DT::renderDataTable({
@@ -190,6 +221,92 @@ server <- function(input, output) {
             write.csv(df_merged, file)
         }
     )
+}
+
+wigToRangedData2 = function (wigfile, verbose = TRUE){
+    if (verbose) {
+        message(paste("Slurping:", wigfile))
+    }
+    input <- as.vector(wigfile[,1])
+    breaks <- c(grep("fixedStep", input), length(input) + 
+                    1)
+    temp <- NULL
+    span <- NULL
+    for (i in 1:(length(breaks) - 1)) {
+        data_range <- (breaks[i] + 1):(breaks[i + 1] - 1)
+        track_info <- input[breaks[i]]
+        if (verbose) {
+            message(paste("Parsing:", track_info))
+        }
+        tokens <- strsplit(sub("fixedStep chrom=(\\S+) start=(\\d+) step=(\\d+) span=(\\d+)", 
+                               "\\1 \\2 \\3 \\4", track_info, perl = TRUE), 
+                           " ")[[1]]
+        span <- as.integer(tokens[4])
+        chr <- rep.int(tokens[1], length(data_range))
+        pos <- seq(from = as.integer(tokens[2]), by = as.integer(tokens[3]), 
+                   length.out = length(data_range))
+        val <- as.numeric(input[data_range])
+        temp <- c(temp, list(data.frame(chr, pos, val)))
+    }
+    if (verbose) {
+        message("Sorting by decreasing chromosome size")
+    }
+    lengths <- as.integer(lapply(temp, nrow))
+    temp <- temp[order(lengths, decreasing = TRUE)]
+    temp = do.call("rbind", temp)
+    output <- data.table(chr = temp$chr, start = temp$pos, end = temp$pos + 
+                             span, value = temp$val)
+    return(output)
+}
+
+wigToArray2 = function (wigfile, verbose = TRUE){
+    if (verbose) {
+        message(paste("Slurping:", wigfile))
+    }
+    input <- as.vector(wigfile[,1])
+    breaks <- c(grep("fixedStep", input), length(input) + 
+                    1)
+    temp <- NULL
+    for (i in 1:(length(breaks) - 1)) {
+        data_range <- (breaks[i] + 1):(breaks[i + 1] - 1)
+        track_info <- input[breaks[i]]
+        if (verbose) {
+            message(paste("Parsing:", track_info))
+        }
+        tokens = strsplit(sub("fixedStep chrom=(\\S+) start=(\\d+) step=(\\d+) span=(\\d+)", 
+                              "\\1 \\2 \\3 \\4", track_info, perl = TRUE), 
+                          " ")[[1]]
+        val <- as.numeric(input[data_range])
+        temp <- c(temp, list(val))
+    }
+    if (verbose) {
+        message("Sorting by decreasing chromosome size")
+    }
+    lengths <- as.integer(lapply(temp, length))
+    temp <- temp[order(lengths, decreasing = TRUE)]
+    output <- unlist(temp)
+    return(output)
+}
+
+wigsToRangedData2 = function (readfile, gcfile, mapfile, verbose = FALSE){
+    output <- wigToRangedData(readfile, verbose)
+    colnames(output)[4] <- c("reads")
+    output$reads <- as.integer(output$reads)
+    gc <- wigToArray(gcfile, verbose)
+    if (nrow(output) != length(gc)) {
+        stop(paste("Number of readcount bins (", nrow(output), 
+                   ") differs from GC count bins (", length(gc), 
+                   ")", sep = ""))
+    }
+    map = wigToArray(mapfile, verbose)
+    if (nrow(output) != length(map)) {
+        stop(paste("Number of readcount bins (", nrow(output), 
+                   ") differs from mappability bins (", length(map), 
+                   ")", sep = ""))
+    }
+    output$gc <- gc
+    output$map <- map
+    return(output)
 }
 
 # Run the application 
