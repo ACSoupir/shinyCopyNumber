@@ -113,8 +113,12 @@ server <- function(input, output) {
             
             for(i in 1:length(input$samplewig[,1])){
                 temp <- read.csv(input$samplewig[[i, 'datapath']], header=FALSE)
-                message(substr(input$samplewig[[i, 'name']], 1, nchar(input$samplewig[[i, 'name']])-4))
-                
+                colnames(temp) = substr(input$samplewig[[i, 'name']], 1, nchar(input$samplewig[[i, 'name']])-4)
+                if(!exists("datawig")){
+                    datawig = temp
+                }else{
+                    datawig = cbind(datawig, temp)
+                }
                 
                 progress$inc(1/length(input$samplewig[,1]), detail=paste("Working on file #", i))
             }
@@ -124,6 +128,9 @@ server <- function(input, output) {
             datawig = read.csv(input$samplewig$datapath,
                                header = )
         }
+        
+        #assign('sample_wig', datawig, envir=.GlobalEnv)
+        DT::datatable(datawig, width = 800)
         
     })
 
