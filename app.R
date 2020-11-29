@@ -183,6 +183,7 @@ server <- function(input, output) {
         }
         message(class(as.numeric(input$correctBy)), as.numeric(input$correctBy))
         
+        assign("merged_copy_numbers", merged_copy, envir=.GlobalEnv)
         DT::datatable(merged_copy, width = 800)
     })
 
