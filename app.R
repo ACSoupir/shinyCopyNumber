@@ -44,6 +44,12 @@ ui <- navbarPage("Shiny Copy Numbers!",
                  tags$hr(),
                  
                  actionButton("copyNumberCalculate", "Calculate Copy Number"),
+                 numericInput("read_thresh", "Read Threshold",
+                              value = 0.01, min = 0.0001, max = 0.1,
+                              step = 0.0001),
+                 numericInput("gc_thresh", "GC Threshold",
+                              value = 0.001, min = 0.0001, max = 0.1,
+                              step = 0.0001),
                  
                  width = 3
              ),
@@ -157,7 +163,7 @@ server <- function(input, output) {
         mappability = read.csv(gzfile(paste("mappability/",genome,".map",window,".wig.gz",sep="")),header=FALSE)
         for(i in 1:ncol(sample_wig)){
             uncorrected_reads = wigsToRangedData2(sample_wig[,i], gccontent[,1], mappability[,1])
-            corrected_copy = correctReadcount(uncorrected_reads)
+            corrected_copy = correctReadcount2(uncorrected_reads, routlier = input$read_thresh, doutlier = input$gc_thresh)
             
             progress$inc(1/length(input$samplewig[,1]), detail=paste("Calculating Copy Number for ", colnames(sample_wig)[i]))
         }
@@ -307,6 +313,50 @@ wigsToRangedData2 = function (readfile, gcfile, mapfile, verbose = FALSE){
     output$gc <- gc
     output$map <- map
     return(output)
+}
+
+correctReadcount2 = function (x, mappability = 0.9, samplesize = 50000, routlier = 0.01, doutlier = 0.001,  verbose = TRUE){
+    if (length(x$reads) == 0 | length(x$gc) == 0 | length(x$map) == 
+        0) {
+        stop("Missing one of required columns: reads, gc, map")
+    }
+    if (verbose) {
+        message("Applying filter on data...")
+    }
+    x$valid <- TRUE
+    x$valid[x$reads <= 0 | x$gc < 0] <- FALSE
+    x$ideal <- TRUE
+    
+    range <- quantile(x$reads[x$valid], prob = c(0, 1 - routlier), 
+                      na.rm = TRUE)
+    
+    domain <- quantile(x$gc[x$valid], prob = c(doutlier, 1 - 
+                                                   doutlier), na.rm = TRUE)
+    x$ideal[!x$valid | x$map < mappability | x$reads <= range[1] | 
+                x$reads > range[2] | x$gc < domain[1] | x$gc > domain[2]] <- FALSE
+    if (verbose) {
+        message("Correcting for GC bias...")
+    }
+    set <- which(x$ideal)
+    select <- sample(set, min(length(set), samplesize))
+    rough = loess(x$reads[select] ~ x$gc[select], span = 0.03)
+    i <- seq(0, 1, by = 0.001)
+    final = loess(predict(rough, i) ~ i, span = 0.3)
+    x$cor.gc <- x$reads/predict(final, x$gc)
+    if (verbose) {
+        message("Correcting for mappability bias...")
+    }
+    coutlier <- 0.01
+    range <- quantile(x$cor.gc[which(x$valid)], prob = c(0, 1 - 
+                                                             coutlier), na.rm = TRUE)
+    set <- which(x$cor.gc < range[2])
+    select <- sample(set, min(length(set), samplesize))
+    final = approxfun(lowess(x$map[select], x$cor.gc[select]))
+    x$cor.map <- x$cor.gc/final(x$map)
+    x$copy <- x$cor.map
+    x$copy[x$copy <= 0] = NA
+    x$copy <- log(x$copy, 2)
+    return(x)
 }
 
 # Run the application 
