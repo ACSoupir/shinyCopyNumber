@@ -51,12 +51,19 @@ ui <- navbarPage("Shiny Copy Numbers!",
                               value = 0.001, min = 0.0001, max = 0.1,
                               step = 0.0001),
                  
+                 selectInput("correctBy", "Value In New Table",
+                             choices = c("GC Corrected" = "cor.gc",
+                                         "GC and Map Corrected" = "cor.map",
+                                         "Log2 (GC and Map Corrected)" = "copy"),
+                             selected = "copy"),
+                 
                  width = 3
              ),
              
              mainPanel(type="tabs",
                        tabPanel("Upload readCounter Output", DT::dataTableOutput("inputwig")),
-                       tabPanel("Upload readCounter Output", DT::dataTableOutput("copyNumberTable"))
+                       tabPanel("Upload readCounter Output", DT::dataTableOutput("copyNumberTable")),
+                       width = 9
              )
     ),
     
@@ -138,7 +145,8 @@ server <- function(input, output) {
             
         }else{
             datawig = read.csv(input$samplewig$datapath,
-                               header = )
+                               header = FALSE)
+            colnames(datawig) = substr(input$samplewig$name, 1, nchar(input$samplewig$name)-4)
         }
         
         assign('sample_wig', datawig, envir=.GlobalEnv)
@@ -163,12 +171,19 @@ server <- function(input, output) {
         mappability = read.csv(gzfile(paste("mappability/",genome,".map",window,".wig.gz",sep="")),header=FALSE)
         for(i in 1:ncol(sample_wig)){
             uncorrected_reads = wigsToRangedData2(sample_wig[,i], gccontent[,1], mappability[,1])
-            corrected_copy = correctReadcount2(uncorrected_reads, routlier = input$read_thresh, doutlier = input$gc_thresh)
+            corrected_copy = as.data.frame(correctReadcount2(uncorrected_reads, routlier = input$read_thresh, doutlier = input$gc_thresh),stringsAsFactors=FALSE)
+            
+            if(!exists("merged_copy")){
+                merged_copy = corrected_copy[,c("chr","start","end",input$correctBy)]
+            } else {
+                merged_copy = cbind(merged_copy, corrected_copy[,input$correctBy])
+            }
             
             progress$inc(1/length(input$samplewig[,1]), detail=paste("Calculating Copy Number for ", colnames(sample_wig)[i]))
         }
+        message(class(as.numeric(input$correctBy)), as.numeric(input$correctBy))
         
-        DT::datatable(sample_wig, width = 800)
+        DT::datatable(merged_copy, width = 800)
     })
 
     output$rawTable1 = DT::renderDataTable({
