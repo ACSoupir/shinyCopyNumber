@@ -26,22 +26,22 @@ ui <- navbarPage("Shiny Copy Numbers!",
                                       "readCounter wig from bam",
                                       c(".wig"))),
                  
+                 selectInput("window", "readCounter Window",
+                             choices = c("1,000 bp" = 1000,
+                                         "10,000 bp" = 10000,
+                                         "100,000 bp" = 100000,
+                                         "1,000,000 bp" = 1000000),
+                             selected = 1000000),
                  tags$hr(),
                  
-                 radioButtons("window", "Window",
-                              choices = c("10,000 bp" = "10000",
-                                          "100,000 bp" = "100000",
-                                          "1,000,000 bp" = "1000000"),
-                              selected = "1000000"),
-                 tags$hr(),
-                 
-                 selectInput("genome", "Genome Alignment",
+                 selectInput("genome", "Genome Version",
                               choices = c(None = NULL,
                                           "hg19" = "hg19",
                                           "GRCh37" = "GRCh37",
                                           "b37 (decoy)" = "b37"),
-                              selected = NULL),
+                              selected = "b37"),
                  tags$hr(),
+                 
                  width = 3
              ),
              
@@ -101,10 +101,19 @@ ui <- navbarPage("Shiny Copy Numbers!",
 
 # Define server logic required to draw a histogram
 server <- function(input, output) {
+    
+    output$inputwig = DT::renderDataTable({
+        req(input$samplewig)
+        lst = list()
+        for(i in 1:length(input$samplewig[,1])){
+            lst[[i]] <- read.csv(input$samplewig[[i, 'datapath']])
+        }
+        
+        message(length(lst))
+    })
 
     output$rawTable1 = DT::renderDataTable({
         req(input$file1)
-        message(input$file1$datapath)
         
         df_file1 = read.csv(input$file1$datapath,
                       header = input$header,
