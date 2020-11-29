@@ -104,12 +104,27 @@ server <- function(input, output) {
     
     output$inputwig = DT::renderDataTable({
         req(input$samplewig)
-        lst = list()
-        for(i in 1:length(input$samplewig[,1])){
-            lst[[i]] <- read.csv(input$samplewig[[i, 'datapath']])
+        
+        if(length(input$samplewig[,1]) > 1){
+            progress = shiny::Progress$new()
+            on.exit(progress$close())
+            
+            progress$set(message = "Merging files")
+            
+            for(i in 1:length(input$samplewig[,1])){
+                temp <- read.csv(input$samplewig[[i, 'datapath']], header=FALSE)
+                message(substr(input$samplewig[[i, 'name']], 1, nchar(input$samplewig[[i, 'name']])-4))
+                
+                
+                progress$inc(1/length(input$samplewig[,1]), detail=paste("Working on file #", i))
+            }
+            
+            
+        }else{
+            datawig = read.csv(input$samplewig$datapath,
+                               header = )
         }
         
-        message(length(lst))
     })
 
     output$rawTable1 = DT::renderDataTable({
