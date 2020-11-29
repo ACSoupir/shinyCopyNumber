@@ -61,9 +61,8 @@ ui <- navbarPage("Shiny Copy Numbers!",
              ),
              
              mainPanel(type="tabs",
-                       tabPanel("Upload readCounter Output", DT::dataTableOutput("inputwig")),
-                       tabPanel("Upload readCounter Output", DT::dataTableOutput("copyNumberTable")),
-                       width = 9
+                       tabPanel("Upload readCounter Output", DT::dataTableOutput("inputwig", width = 1200)),
+                       tabPanel("Upload readCounter Output", DT::dataTableOutput("copyNumberTable", width = 1200))
              )
     ),
     
@@ -101,7 +100,7 @@ ui <- navbarPage("Shiny Copy Numbers!",
              ),
              
              mainPanel(type="tabs",
-                       tabPanel("Upload Data", DT::dataTableOutput("rawTable1"), DT::dataTableOutput("rawTable2"))
+                       tabPanel("Upload Data", DT::dataTableOutput("rawTable1", width = 1200), DT::dataTableOutput("rawTable2", width = 1200))
              )
     ),
     
@@ -111,7 +110,7 @@ ui <- navbarPage("Shiny Copy Numbers!",
              ),
              
              mainPanel(type="tabs",
-                       tabPanel("Merge Tables",  DT::dataTableOutput("mergedTable"))
+                       tabPanel("Merge Tables",  DT::dataTableOutput("mergedTable", width = 1200))
                        )
              )
     )
@@ -150,7 +149,7 @@ server <- function(input, output) {
         }
         
         assign('sample_wig', datawig, envir=.GlobalEnv)
-        DT::datatable(datawig, width = 800)
+        DT::datatable(datawig, options = list(scrollX = TRUE))
         
     })
     
@@ -167,8 +166,8 @@ server <- function(input, output) {
         
         progress$set(message = "calculating copy number")
         
-        gccontent = read.csv(gzfile(paste("gccontent/",genome,".gc",window,".wig.gz",sep="")),header=FALSE)
-        mappability = read.csv(gzfile(paste("mappability/",genome,".map",window,".wig.gz",sep="")),header=FALSE)
+        gccontent = read.csv(gzfile(paste("gccontent/",input$genome,".gc",input$window,".wig.gz",sep="")),header=FALSE)
+        mappability = read.csv(gzfile(paste("mappability/",input$genome,".map",input$window,".wig.gz",sep="")),header=FALSE)
         for(i in 1:ncol(sample_wig)){
             uncorrected_reads = wigsToRangedData2(sample_wig[,i], gccontent[,1], mappability[,1])
             corrected_copy = as.data.frame(correctReadcount2(uncorrected_reads, routlier = input$read_thresh, doutlier = input$gc_thresh),stringsAsFactors=FALSE)
@@ -179,12 +178,13 @@ server <- function(input, output) {
                 merged_copy = cbind(merged_copy, corrected_copy[,input$correctBy])
             }
             
+            colnames(merged_copy)[i+3] = colnames(sample_wig)[i]
+            
             progress$inc(1/length(input$samplewig[,1]), detail=paste("Calculating Copy Number for ", colnames(sample_wig)[i]))
         }
-        message(class(as.numeric(input$correctBy)), as.numeric(input$correctBy))
         
         assign("merged_copy_numbers", merged_copy, envir=.GlobalEnv)
-        DT::datatable(merged_copy, width = 800)
+        DT::datatable(merged_copy, options = list(scrollX = TRUE))
     })
 
     output$rawTable1 = DT::renderDataTable({
@@ -196,7 +196,7 @@ server <- function(input, output) {
                       quote = input$quote)
         df_file1 = Filter(function(x)!all(is.na(x)),df_file1)
         assign('file1', df_file1, envir=.GlobalEnv)
-        DT::datatable(df_file1, width = 800)
+        DT::datatable(df_file1, options = list(scrollX = TRUE))
     })
     
     output$rawTable2 = DT::renderDataTable({
@@ -208,15 +208,15 @@ server <- function(input, output) {
                       quote = input$quote)
         df_file2 = Filter(function(x)!all(is.na(x)),df_file2)
         assign('file2', df_file2, envir=.GlobalEnv)
-        DT::datatable(df_file2, width = 800)
+        DT::datatable(df_file2, options = list(scrollX = TRUE))
     })
     
     output$mergedTable = DT::renderDataTable({
         req(input$file1)
         req(input$file2)
         
-        df_merged = merge(file1, file2, by=intersect(colnames(file1)[apply(sample, MARGIN = 2, FUN = function(x) !any(is.na(x)))],
-                                                     colnames(file2)[apply(sample, MARGIN = 2, FUN = function(x) !any(is.na(x)))]), all=TRUE)
+        df_merged = merge(file1, file2, by=intersect(colnames(file1)[apply(file1, MARGIN = 2, FUN = function(x) !any(is.na(x)))],
+                                                     colnames(file2)[apply(file2, MARGIN = 2, FUN = function(x) !any(is.na(x)))]), all=TRUE)
         colnames(df_merged) = gsub('\\.x',
                                    paste(".",
                                          substr(input$file1$name,
@@ -232,7 +232,7 @@ server <- function(input, output) {
                                          sep=""),
                                    colnames(df_merged))
         assign('df_merged', df_merged, envir=.GlobalEnv)
-        DT::datatable(df_merged, width=100)
+        DT::datatable(df_merged, options = list(scrollX = TRUE))
     })
     
     output$downloadData = downloadHandler(
