@@ -36,3 +36,4 @@ ___
 * Add graphical representations of the copy number fixes done by HMMcopy for samples.
 * Add selection of experimental design file(s) to allow comparisons between different groups' copy number changes (patient normal / tumor).
 * **Add demo data**
+* Add heatmap and clustering of copy number between samples
