@@ -169,7 +169,7 @@ server <- function(input, output) {
         gccontent = read.csv(gzfile(paste("gccontent/",input$genome,".gc",input$window,".wig.gz",sep="")),header=FALSE)
         mappability = read.csv(gzfile(paste("mappability/",input$genome,".map",input$window,".wig.gz",sep="")),header=FALSE)
         for(i in 1:ncol(sample_wig)){
-            uncorrected_reads = wigsToRangedData2(sample_wig[,i], gccontent[,1], mappability[,1])
+            uncorrected_reads = wigsToRangedData2(as.vector(sample_wig[,i]), as.vector(gccontent[,1]), as.vector(mappability[,1]))
             corrected_copy = as.data.frame(correctReadcount2(uncorrected_reads, routlier = input$read_thresh, doutlier = input$gc_thresh),stringsAsFactors=FALSE)
             
             if(!exists("merged_copy")){
