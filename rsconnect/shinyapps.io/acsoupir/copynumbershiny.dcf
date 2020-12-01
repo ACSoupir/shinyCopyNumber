@@ -1,0 +1,13 @@
+name: copynumbershiny
+title:
+username:
+account: acsoupir
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 3317826
+bundleId: 3925817
+url: https://acsoupir.shinyapps.io/copynumbershiny/
+when: 1606792821.00122
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: SraRunTable.txt|SRR_Acc_List.txt

@@ -35,5 +35,5 @@ ___
 * In the future I plan to add more genomes and possibly window sizes. I did edit the perl code for the mappability files to use `bowtie2` instead of `bowtie` and use multithreading but haven't had the opportunity to test it out. With my computer, it took an afternoon to do the three genomes above due to single-threaded nature of the perl scripts.
 * Add graphical representations of the copy number fixes done by HMMcopy for samples.
 * Add selection of experimental design file(s) to allow comparisons between different groups' copy number changes (patient normal / tumor).
-* **Add demo data**
+* ~~**Add demo data**~~
 * Add heatmap and clustering of copy number between samples

@@ -59,6 +59,9 @@ ui <- navbarPage("Shiny Copy Numbers!",
                                          "GC and Map Corrected" = "cor.map",
                                          "Log2 (GC and Map Corrected)" = "copy"),
                              selected = "copy"),
+                 tags$hr(),
+                 
+                 actionButton("exampleData", "Load Example Data"),
                  
                  width = 3
              ),
@@ -122,46 +125,73 @@ ui <- navbarPage("Shiny Copy Numbers!",
 server <- function(input, output) {
     
     buttons <- reactiveValues(data = NULL)
+    buttons <- reactiveValues(eData = NULL)
+    
     
     output$inputwig = DT::renderDataTable({
-        req(input$samplewig)
+        if(is.null(buttons$eData)){
+            req(input$samplewig)
         
-        if(length(input$samplewig[,1]) > 1){
+            if(length(input$samplewig[,1]) > 1){
+                progress = shiny::Progress$new()
+                on.exit(progress$close())
+                
+                progress$set(message = "Merging files")
+                
+                for(i in 1:length(input$samplewig[,1])){
+                    temp <- read.csv(input$samplewig[[i, 'datapath']], header=FALSE)
+                    colnames(temp) = substr(input$samplewig[[i, 'name']], 1, nchar(input$samplewig[[i, 'name']])-4)
+                    if(!exists("datawig")){
+                        datawig = temp
+                    }else{
+                        datawig = cbind(datawig, temp)
+                    }
+                    
+                    progress$inc(1/length(input$samplewig[,1]), detail=paste("Working on file #", i))
+                }
+                
+                
+            }else{
+                datawig = read.csv(input$samplewig$datapath,
+                                   header = FALSE)
+                colnames(datawig) = substr(input$samplewig$name, 1, nchar(input$samplewig$name)-4)
+            }
+            
+            assign('sample_wig', datawig, envir=.GlobalEnv)
+            DT::datatable(datawig, options = list(scrollX = TRUE))
+        } else {
             progress = shiny::Progress$new()
             on.exit(progress$close())
             
-            progress$set(message = "Merging files")
+            progress$set(message="Loading Example Data")
             
-            for(i in 1:length(input$samplewig[,1])){
-                temp <- read.csv(input$samplewig[[i, 'datapath']], header=FALSE)
-                colnames(temp) = substr(input$samplewig[[i, 'name']], 1, nchar(input$samplewig[[i, 'name']])-4)
+            for(i in 1:length(list.files("readCounterWig/b37/"))){
+                temp = read.csv(paste("readCounterWig/b37/",list.files("readCounterWig/b37/")[i],sep=""),header=FALSE)
+                colnames(temp) = substr(list.files("readCounterWig/b37/")[i], 1, nchar(list.files("readCounterWig/b37/")[i])-4)
+                
                 if(!exists("datawig")){
                     datawig = temp
                 }else{
                     datawig = cbind(datawig, temp)
                 }
                 
-                progress$inc(1/length(input$samplewig[,1]), detail=paste("Working on file #", i))
+                progress$inc(1/length(list.files("readCounterWig/b37/")), detail=paste("Working on file #", i))
             }
             
-            
-        }else{
-            datawig = read.csv(input$samplewig$datapath,
-                               header = FALSE)
-            colnames(datawig) = substr(input$samplewig$name, 1, nchar(input$samplewig$name)-4)
+            assign('sample_wig', datawig, envir=.GlobalEnv)
+            DT::datatable(datawig, options = list(scrollX = TRUE))
         }
-        
-        assign('sample_wig', datawig, envir=.GlobalEnv)
-        DT::datatable(datawig, options = list(scrollX = TRUE))
-        
     })
     
     observeEvent(input$copyNumberCalculate, {
         buttons$data = 1
     })
     
+    observeEvent(input$exampleData, {
+        buttons$eData = 1
+    })
+    
     output$copyNumberTable = DT::renderDataTable({
-        req(input$samplewig)
         if(is.null(buttons$data)) return()
         
         progress = shiny::Progress$new()
@@ -191,32 +221,50 @@ server <- function(input, output) {
     })
 
     output$rawTable1 = DT::renderDataTable({
-        req(input$file1)
-        
-        df_file1 = read.csv(input$file1$datapath,
-                      header = input$header,
-                      sep = input$sep,
-                      quote = input$quote)
-        df_file1 = Filter(function(x)!all(is.na(x)),df_file1)
-        assign('file1', df_file1, envir=.GlobalEnv)
-        DT::datatable(df_file1, options = list(scrollX = TRUE))
+        if(is.null(buttons$eData)){
+            req(input$file1)
+            
+            df_file1 = read.csv(input$file1$datapath,
+                          header = input$header,
+                          sep = input$sep,
+                          quote = input$quote)
+            df_file1 = Filter(function(x)!all(is.na(x)),df_file1)
+            assign('file1', df_file1, envir=.GlobalEnv)
+            DT::datatable(df_file1, options = list(scrollX = TRUE))
+        } else {
+            df_file1 = read.csv("donorInformation/specimen.tsv",
+                                header = input$header,
+                                sep = "\t",
+                                quote = input$quote)
+            df_file1 = Filter(function(x)!all(is.na(x)),df_file1)
+            assign('file1', df_file1, envir=.GlobalEnv)
+            DT::datatable(df_file1, options = list(scrollX = TRUE))
+        }
     })
     
     output$rawTable2 = DT::renderDataTable({
-        req(input$file2)
-        
-        df_file2 = read.csv(input$file2$datapath,
-                      header = input$header,
-                      sep = input$sep,
-                      quote = input$quote)
-        df_file2 = Filter(function(x)!all(is.na(x)),df_file2)
-        assign('file2', df_file2, envir=.GlobalEnv)
-        DT::datatable(df_file2, options = list(scrollX = TRUE))
+        if(is.null(buttons$eData)){
+            req(input$file2)
+            
+            df_file2 = read.csv(input$file2$datapath,
+                          header = input$header,
+                          sep = input$sep,
+                          quote = input$quote)
+            df_file2 = Filter(function(x)!all(is.na(x)),df_file2)
+            assign('file2', df_file2, envir=.GlobalEnv)
+            DT::datatable(df_file2, options = list(scrollX = TRUE))
+        } else {
+            df_file2 = read.csv("donorInformation/sample.tsv",
+                                header = input$header,
+                                sep = "\t",
+                                quote = input$quote)
+            df_file2 = Filter(function(x)!all(is.na(x)),df_file2)
+            assign('file2', df_file2, envir=.GlobalEnv)
+            DT::datatable(df_file2, options = list(scrollX = TRUE))
+        }
     })
     
     output$mergedTable = DT::renderDataTable({
-        req(input$file1)
-        req(input$file2)
         
         df_merged = merge(file1, file2, by=intersect(colnames(file1)[apply(file1, MARGIN = 2, FUN = function(x) !any(is.na(x)))],
                                                      colnames(file2)[apply(file2, MARGIN = 2, FUN = function(x) !any(is.na(x)))]), all=TRUE)
