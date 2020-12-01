@@ -75,13 +75,15 @@ ui <- navbarPage("Shiny Copy Numbers!",
     
     tabPanel("Visualize Copy Number",
              sidebarPanel(
-                 
-                 uiOutput("choose_genome_sample"),
+               
+               uiOutput("choose_genome_sample"),
+               uiOutput("choose_genome_control"),
                  tags$hr()
              ),
              
              mainPanel(type="tabs",
-                       plotOutput("sampleGenomePlot", width = 800)
+                       plotOutput("sampleGenomePlot", width = 800),
+                       plotOutput("controlGenomePlot", width = 800)
              )
     ),
     
@@ -215,7 +217,10 @@ server <- function(input, output) {
         mappability = read.csv(gzfile(paste("mappability/",input$genome,".map",input$window,".wig.gz",sep="")),header=FALSE)
         for(i in 1:ncol(sample_wig)){
             uncorrected_reads = wigsToRangedData2(as.vector(sample_wig[,i]), as.vector(gccontent[,1]), as.vector(mappability[,1]))
-            corrected_copy = as.data.frame(correctReadcount2(uncorrected_reads, routlier = input$read_thresh, doutlier = input$gc_thresh),stringsAsFactors=FALSE)
+            corrected_copy = as.data.frame(correctReadcount2(uncorrected_reads,
+                                                             routlier = input$read_thresh,
+                                                             doutlier = input$gc_thresh),
+                                           stringsAsFactors=FALSE)
             
             if(!exists("merged_copy")){
                 merged_copy = corrected_copy[,c("chr","start","end",input$correctBy)]
@@ -233,32 +238,91 @@ server <- function(input, output) {
     })
     
     output$choose_genome_sample = renderUI({
-        if(is.null(merged_copy_numbers)){
-            return()
-        }
-        
-        sampleNames = names(merged_copy_numbers)[4:length(merged_copy_numbers)]
-        
-        selectInput("sampleGenomePlot", "Choose Sample",
-                    choices = sampleNames,
-                    selected = sampleNames)
+      if(is.null(merged_copy_numbers)){
+        return()
+      }
+      
+      sampleNames = names(merged_copy_numbers)[4:length(merged_copy_numbers)]
+      
+      selectInput("sampleGenomePlot", "Choose Sample",
+                  choices = sampleNames,
+                  selected = sampleNames)
+    })
+    
+    output$choose_genome_control = renderUI({
+      if(is.null(merged_copy_numbers)){
+        return()
+      }
+      
+      sampleNames = names(merged_copy_numbers)[4:length(merged_copy_numbers)]
+      
+      selectInput("controlGenomePlot", "Choose Control",
+                  choices = sampleNames,
+                  selected = sampleNames)
     })
     
     output$sampleGenomePlot = renderPlot({
-        sample_name = input$sampleGenomePlot
-        
-        
-        temp_copy_numbers = merged_copy_numbers[,1:3]
-        temp_copy_numbers$mid_window = as.integer(merged_copy_numbers[,3] - (merged_copy_numbers[,3] - merged_copy_numbers[,2]) / 2)
-        temp_copy_numbers = temp_copy_numbers[,-c(2:3)]
-        temp_copy_numbers = cbind(temp_copy_numbers, merged_copy_numbers[,4:ncol(merged_copy_numbers)])
-        
-        temp_winsorize = winsorize(data=temp_copy_numbers)
-        test_winsorize = temp_winsorize[complete.cases(temp_winsorize),]
-        test_winsorize = test_winsorize[order(test_winsorize$chrom),]
-        single.seg = pcf(data=test_winsorize, gamma=40)
-        print(input$choose_genome_sample)
-        plotGenome(data=temp_copy_numbers, segments = single.seg, sample = grep(sample_name, colnames(test_winsorize)[-c(1:2)]))
+      if(is.null(input$sampleGenomePlot)){
+        return()
+      }
+      
+      if(is.null(buttons$data)) return()
+      
+      sample_name = input$sampleGenomePlot
+      
+      
+      temp_copy_numbers = merged_copy_numbers[,1:3]
+      temp_copy_numbers$mid_window = as.integer(merged_copy_numbers[,3] - (merged_copy_numbers[,3] - merged_copy_numbers[,2]) / 2)
+      temp_copy_numbers = temp_copy_numbers[,-c(2:3)]
+      temp_copy_numbers = cbind(temp_copy_numbers, merged_copy_numbers[,4:ncol(merged_copy_numbers)])
+      
+      temp_winsorize = winsorize(data=temp_copy_numbers)
+      test_winsorize = temp_winsorize[complete.cases(temp_winsorize),]
+      test_winsorize = test_winsorize[order(test_winsorize$chrom),]
+      single.seg = pcf(data=test_winsorize, gamma=40)
+      print(input$choose_genome_sample)
+      plotGenome(data=temp_copy_numbers,
+                 segments = single.seg,
+                 sample = grep(sample_name,
+                               colnames(test_winsorize)[-c(1:2)]),
+                 main=paste("Tumor:",sample_name),
+                 connect=FALSE,
+                 col="black",
+                 q.col="blue" #trucated value color
+                 ,cex=1
+                 ,pch=20)
+    })
+    
+    output$controlGenomePlot = renderPlot({
+      if(is.null(input$controlGenomePlot)){
+        return()
+      }
+      
+      if(is.null(buttons$data)) return()
+      
+      control_name = input$controlGenomePlot
+      
+      
+      temp_copy_numbers = merged_copy_numbers[,1:3]
+      temp_copy_numbers$mid_window = as.integer(merged_copy_numbers[,3] - (merged_copy_numbers[,3] - merged_copy_numbers[,2]) / 2)
+      temp_copy_numbers = temp_copy_numbers[,-c(2:3)]
+      temp_copy_numbers = cbind(temp_copy_numbers, merged_copy_numbers[,4:ncol(merged_copy_numbers)])
+      
+      temp_winsorize = winsorize(data=temp_copy_numbers)
+      test_winsorize = temp_winsorize[complete.cases(temp_winsorize),]
+      test_winsorize = test_winsorize[order(test_winsorize$chrom),]
+      single.seg = pcf(data=test_winsorize, gamma=40)
+      print(input$choose_genome_control)
+      plotGenome(data=temp_copy_numbers,
+                 segments = single.seg,
+                 sample = grep(control_name,
+                               colnames(test_winsorize)[-c(1:2)]),
+                 main=paste("Control:", control_name),
+                 connect=FALSE,
+                 col="black",
+                 q.col="blue" #trucated value color
+                 ,cex=1
+                 ,pch=20)
     })
 
     output$rawTable1 = DT::renderDataTable({
