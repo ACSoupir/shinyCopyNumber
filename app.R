@@ -11,6 +11,9 @@ library(shiny)
 library(DT)
 library(stringr)
 library(HMMcopy)
+library(BiocManager)
+options(repos = BiocManager::repositories())
+
 rm(list=ls())
 #max file upload size set to 30MB
 options(shiny.maxRequestSize = 30*1024^2)
