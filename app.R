@@ -284,10 +284,10 @@ server <- function(input, output) {
       temp_copy_numbers = temp_copy_numbers[,-c(2:3)]
       temp_copy_numbers = cbind(temp_copy_numbers, merged_copy_numbers[,4:ncol(merged_copy_numbers)])
       
-      temp_winsorize = winsorize(data=temp_copy_numbers)
+      temp_winsorize = winsorize(data=temp_copy_numbers,verbose = FALSE)
       test_winsorize = temp_winsorize[complete.cases(temp_winsorize),]
       test_winsorize = test_winsorize[order(test_winsorize$chrom),]
-      single.seg = pcf(data=test_winsorize, gamma=40)
+      single.seg = pcf(data=test_winsorize, gamma=40,verbose = FALSE)
       print(input$choose_genome_sample)
       plotGenome(data=temp_copy_numbers,
                  segments = single.seg,
@@ -316,10 +316,10 @@ server <- function(input, output) {
       temp_copy_numbers = temp_copy_numbers[,-c(2:3)]
       temp_copy_numbers = cbind(temp_copy_numbers, merged_copy_numbers[,4:ncol(merged_copy_numbers)])
       
-      temp_winsorize = winsorize(data=temp_copy_numbers)
+      temp_winsorize = winsorize(data=temp_copy_numbers,verbose = FALSE)
       test_winsorize = temp_winsorize[complete.cases(temp_winsorize),]
       test_winsorize = test_winsorize[order(test_winsorize$chrom),]
-      single.seg = pcf(data=test_winsorize, gamma=40)
+      single.seg = pcf(data=test_winsorize, gamma=40,verbose = FALSE)
       print(input$choose_genome_control)
       plotGenome(data=temp_copy_numbers,
                  segments = single.seg,
@@ -372,6 +372,8 @@ server <- function(input, output) {
       
       if(is.null(buttons$data)) return()
       
+      if(is.null(input$sampleToPlotSegment)) return()
+      
       SampleToPlot = input$sampleToPlotSegment
       chromosome = input$sampleSegmentChromosome
       
@@ -380,10 +382,10 @@ server <- function(input, output) {
       temp_copy_numbers = temp_copy_numbers[,-c(2:3)]
       temp_copy_numbers = cbind(temp_copy_numbers, merged_copy_numbers[,4:ncol(merged_copy_numbers)])
       
-      temp_winsorize = winsorize(data=temp_copy_numbers)
+      temp_winsorize = winsorize(data=temp_copy_numbers,verbose = FALSE)
       test_winsorize = temp_winsorize[complete.cases(temp_winsorize),]
       test_winsorize = test_winsorize[order(test_winsorize$chrom),]
-      single.seg = pcf(data=test_winsorize, gamma=40)
+      single.seg = pcf(data=test_winsorize, gamma=40,verbose = FALSE)
       print(input$choose_genome_control)
       plotSample(data=temp_copy_numbers,
                  segments = single.seg,
