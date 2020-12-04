@@ -333,6 +333,18 @@ server <- function(input, output) {
                  ,pch=20)
     })
     
+    output$choose_sample_to_plot = renderUI({
+      if(is.null(merged_copy_numbers)){
+        return()
+      }
+      
+      sampleNames = names(merged_copy_numbers)[4:length(merged_copy_numbers)]
+      
+      selectInput("sampleToPlotSegment", "Choose Sample",
+                  choices = sampleNames,
+                  selected = sampleNames)
+    })
+    
     output$choose_chromosome = renderUI({
       if(is.null(merged_copy_numbers)){
         return()
@@ -356,15 +368,12 @@ server <- function(input, output) {
                   selected = chromNames[1])
     })
     
-    output$controlGenomePlot = renderPlot({
-      if(is.null(input$controlGenomePlot)){
-        return()
-      }
+    output$sampleSegmentPlot = renderPlot({
       
       if(is.null(buttons$data)) return()
       
-      control_name = input$controlGenomePlot
-      
+      SampleToPlot = input$sampleToPlotSegment
+      chromosome = input$sampleSegmentChromosome
       
       temp_copy_numbers = merged_copy_numbers[,1:3]
       temp_copy_numbers$mid_window = as.integer(merged_copy_numbers[,3] - (merged_copy_numbers[,3] - merged_copy_numbers[,2]) / 2)
@@ -376,16 +385,18 @@ server <- function(input, output) {
       test_winsorize = test_winsorize[order(test_winsorize$chrom),]
       single.seg = pcf(data=test_winsorize, gamma=40)
       print(input$choose_genome_control)
-      plotGenome(data=temp_copy_numbers,
+      plotSample(data=temp_copy_numbers,
                  segments = single.seg,
-                 sample = grep(control_name,
+                 sample = grep(SampleToPlot,
                                colnames(test_winsorize)[-c(1:2)]),
-                 main=paste("Control:", control_name),
+                 chrom = match(chromosome, unique(test_winsorize$chrom)),
+                 main=paste("Chromosome:", chromosome),
                  connect=FALSE,
                  col="black",
                  q.col="blue" #trucated value color
                  ,cex=1
                  ,pch=20)
+      print(chromosome)
     })
 
     output$rawTable1 = DT::renderDataTable({
