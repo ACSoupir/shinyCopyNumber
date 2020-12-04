@@ -31,6 +31,12 @@ ui <- navbarPage("Shiny Copy Numbers!",
                                       "readCounter wig from bam",
                                       c(".wig"))),
                  
+                 fileInput("sampleMetadata", "Choose Metadata CSV",
+                           multiple = TRUE,
+                           accept = c("csv",
+                                      "sample metadata csv file",
+                                      c(".csv"))),
+                 
                  selectInput("window", "readCounter Window",
                              choices = c("1,000 bp" = "1000",
                                          "10,000 bp" = "10000",
@@ -92,7 +98,7 @@ ui <- navbarPage("Shiny Copy Numbers!",
                uiOutput("choose_chromosome")
              ),
              mainPanel(type="tabs",
-                       plotOutput("sampleSegmentPlot"))
+                       plotOutput("sampleSegmentPlot",width = 800))
     ),
     
     tabPanel("Upload Data",
@@ -386,12 +392,12 @@ server <- function(input, output) {
       test_winsorize = temp_winsorize[complete.cases(temp_winsorize),]
       test_winsorize = test_winsorize[order(test_winsorize$chrom),]
       single.seg = pcf(data=test_winsorize, gamma=40,verbose = FALSE)
-      print(input$choose_genome_control)
+      print(SampleToPlot)
       plotSample(data=temp_copy_numbers,
                  segments = single.seg,
                  sample = grep(SampleToPlot,
                                colnames(test_winsorize)[-c(1:2)]),
-                 chrom = match(chromosome, unique(test_winsorize$chrom)),
+                 chrom = chromosome,
                  main=paste("Chromosome:", chromosome),
                  connect=FALSE,
                  col="black",
