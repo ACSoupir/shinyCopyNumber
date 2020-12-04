@@ -254,7 +254,7 @@ server <- function(input, output) {
       
       selectInput("sampleGenomePlot", "Choose Sample",
                   choices = sampleNames,
-                  selected = sampleNames)
+                  selected = sampleNames[1])
     })
     
     output$choose_genome_control = renderUI({
@@ -266,7 +266,7 @@ server <- function(input, output) {
       
       selectInput("controlGenomePlot", "Choose Control",
                   choices = sampleNames,
-                  selected = sampleNames)
+                  selected = sampleNames[1])
     })
     
     output$sampleGenomePlot = renderPlot({
@@ -342,7 +342,7 @@ server <- function(input, output) {
       
       selectInput("sampleToPlotSegment", "Choose Sample",
                   choices = sampleNames,
-                  selected = sampleNames)
+                  selected = sampleNames[1])
     })
     
     output$choose_chromosome = renderUI({
