@@ -84,7 +84,15 @@ ui <- navbarPage("Shiny Copy Numbers!",
              mainPanel(type="tabs",
                        plotOutput("sampleGenomePlot", width = 800),
                        plotOutput("controlGenomePlot", width = 800)
-             )
+             ),
+    ),
+    tabPanel("Plot Sample",
+             sidebarPanel(
+               uiOutput("choose_sample_to_plot"),
+               uiOutput("choose_chromosome")
+             ),
+             mainPanel(type="tabs",
+                       plotOutput("sampleSegmentPlot"))
     ),
     
     tabPanel("Upload Data",
@@ -291,6 +299,61 @@ server <- function(input, output) {
                  q.col="blue" #trucated value color
                  ,cex=1
                  ,pch=20)
+    })
+    
+    output$controlGenomePlot = renderPlot({
+      if(is.null(input$controlGenomePlot)){
+        return()
+      }
+      
+      if(is.null(buttons$data)) return()
+      
+      control_name = input$controlGenomePlot
+      
+      
+      temp_copy_numbers = merged_copy_numbers[,1:3]
+      temp_copy_numbers$mid_window = as.integer(merged_copy_numbers[,3] - (merged_copy_numbers[,3] - merged_copy_numbers[,2]) / 2)
+      temp_copy_numbers = temp_copy_numbers[,-c(2:3)]
+      temp_copy_numbers = cbind(temp_copy_numbers, merged_copy_numbers[,4:ncol(merged_copy_numbers)])
+      
+      temp_winsorize = winsorize(data=temp_copy_numbers)
+      test_winsorize = temp_winsorize[complete.cases(temp_winsorize),]
+      test_winsorize = test_winsorize[order(test_winsorize$chrom),]
+      single.seg = pcf(data=test_winsorize, gamma=40)
+      print(input$choose_genome_control)
+      plotGenome(data=temp_copy_numbers,
+                 segments = single.seg,
+                 sample = grep(control_name,
+                               colnames(test_winsorize)[-c(1:2)]),
+                 main=paste("Control:", control_name),
+                 connect=FALSE,
+                 col="black",
+                 q.col="blue" #trucated value color
+                 ,cex=1
+                 ,pch=20)
+    })
+    
+    output$choose_chromosome = renderUI({
+      if(is.null(merged_copy_numbers)){
+        return()
+      }
+      X=NULL
+      Y=NULL
+      
+      if("X" %in% merged_copy_numbers$chr){
+        X=TRUE
+      }
+      if("Y" %in% merged_copy_numbers$chr){
+        Y=TRUE
+      }
+      chromNames = unique(merged_copy_numbers$chr)
+      chromNames = as.numeric(chromNames)[!is.na(as.numeric(chromNames))]
+      chromNames = sort(chromNames, decreasing = FALSE)
+      chromNames = append(chromNames, c(if(X) "X", if(Y) "Y"))
+      
+      selectInput("sampleSegmentChromosome", "Choose Chromosome",
+                  choices = chromNames,
+                  selected = chromNames[1])
     })
     
     output$controlGenomePlot = renderPlot({
