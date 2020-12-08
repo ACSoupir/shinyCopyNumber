@@ -79,7 +79,7 @@ ui <- navbarPage("Shiny Copy Numbers!",
              )
     ),
     
-    tabPanel("Visualize Copy Number",
+    tabPanel("Compare Samples",
              sidebarPanel(
                
                uiOutput("choose_genome_sample"),
@@ -92,7 +92,7 @@ ui <- navbarPage("Shiny Copy Numbers!",
                        plotOutput("controlGenomePlot", width = 800)
              ),
     ),
-    tabPanel("Plot Sample",
+    tabPanel("View Chromosome",
              sidebarPanel(
                uiOutput("choose_sample_to_plot"),
                uiOutput("choose_chromosome")
@@ -233,7 +233,8 @@ server <- function(input, output) {
             uncorrected_reads = wigsToRangedData2(as.vector(sample_wig[,i]), as.vector(gccontent[,1]), as.vector(mappability[,1]))
             corrected_copy = as.data.frame(correctReadcount2(uncorrected_reads,
                                                              routlier = input$read_thresh,
-                                                             doutlier = input$gc_thresh),
+                                                             doutlier = input$gc_thresh,
+                                                             verbose = FALSE),
                                            stringsAsFactors=FALSE)
             
             if(!exists("merged_copy")){
